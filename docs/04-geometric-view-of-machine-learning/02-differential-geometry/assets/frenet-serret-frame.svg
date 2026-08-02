@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Frenet-Serret frame</title>
+  <desc id="desc">A space curve with tangent, normal, and binormal vectors at one point.</desc>
+  <defs>
+    <marker id="arrowT" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrowN" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#d1242f"/>
+    </marker>
+    <marker id="arrowB" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1a7f37"/>
+    </marker>
+    <linearGradient id="planeFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f8fa" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#d0d7de" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="520" fill="#ffffff"/>
+
+  <path d="M115 380
+           C190 305, 255 300, 330 330
+           C405 360, 455 270, 515 205
+           C575 140, 665 150, 765 215"
+        fill="none" stroke="#57606a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M115 380
+           C190 305, 255 300, 330 330
+           C405 360, 455 270, 515 205
+           C575 140, 665 150, 765 215"
+        fill="none" stroke="#afb8c1" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 10"/>
+
+  <polygon points="360,360 675,250 760,315 445,425" fill="url(#planeFill)" stroke="#8c959f" stroke-width="2"/>
+  <text x="615" y="386" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#57606a">密切平面</text>
+
+  <circle cx="515" cy="205" r="10" fill="#24292f"/>
+  <text x="495" y="188" font-family="Arial, sans-serif" font-size="22" fill="#24292f">p</text>
+
+  <line x1="515" y1="205" x2="650" y2="122" stroke="#1f6feb" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowT)"/>
+  <text x="665" y="122" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#1f6feb">T</text>
+  <text x="655" y="154" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#1f6feb">切向</text>
+
+  <line x1="515" y1="205" x2="420" y2="314" stroke="#d1242f" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowN)"/>
+  <text x="385" y="346" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#d1242f">N</text>
+  <text x="344" y="374" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#d1242f">法向</text>
+
+  <line x1="515" y1="205" x2="515" y2="68" stroke="#1a7f37" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowB)"/>
+  <text x="532" y="78" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#1a7f37">B</text>
+  <text x="531" y="106" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#1a7f37">副法向</text>
+
+  <path d="M585 250 C615 245, 645 235, 670 215" fill="none" stroke="#8c959f" stroke-width="3" stroke-dasharray="6 8"/>
+  <text x="78" y="432" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#57606a">空间曲线</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">曲面上的局部坐标和切平面</title>
+  <desc id="desc">A surface with u and v coordinate directions, tangent vectors, tangent plane, and normal vector.</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#d1242f"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1a7f37"/>
+    </marker>
+    <linearGradient id="surfaceFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#f0f9ff" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="planeFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f8fa" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#d0d7de" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="520" fill="#ffffff"/>
+
+  <path d="M110 335 C220 230, 330 245, 455 285 C585 326, 675 270, 790 178
+           L790 360 C690 420, 560 450, 420 402 C285 356, 200 382, 110 450 Z"
+        fill="url(#surfaceFill)" stroke="#8c959f" stroke-width="2"/>
+
+  <path d="M155 390 C270 300, 420 305, 720 232" fill="none" stroke="#60a5fa" stroke-width="3" stroke-dasharray="8 9"/>
+  <path d="M230 255 C315 330, 430 375, 610 405" fill="none" stroke="#f87171" stroke-width="3" stroke-dasharray="8 9"/>
+  <text x="705" y="218" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="19" fill="#1f6feb">u 坐标线</text>
+  <text x="610" y="425" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="19" fill="#d1242f">v 坐标线</text>
+
+  <polygon points="390,255 680,275 735,360 445,340" fill="url(#planeFill)" stroke="#8c959f" stroke-width="2"/>
+  <text x="635" y="355" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#57606a">切平面</text>
+
+  <circle cx="515" cy="305" r="9" fill="#24292f"/>
+  <text x="493" y="288" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#24292f">点 p</text>
+
+  <line x1="515" y1="305" x2="660" y2="315" stroke="#1f6feb" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <text x="670" y="320" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#1f6feb">rᵤ</text>
+  <text x="666" y="348" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#1f6feb">沿 u 方向</text>
+
+  <line x1="515" y1="305" x2="440" y2="235" stroke="#d1242f" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+  <text x="385" y="225" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#d1242f">rᵥ</text>
+  <text x="334" y="252" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#d1242f">沿 v 方向</text>
+
+  <line x1="515" y1="305" x2="515" y2="155" stroke="#1a7f37" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+  <text x="532" y="165" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="32" font-weight="700" fill="#1a7f37">n</text>
+  <text x="532" y="194" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#1a7f37">法向量</text>
+
+  <text x="80" y="475" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#57606a">
+    rᵤ 和 rᵥ 张成切平面；n 垂直于切平面。度量用来量 rᵤ、rᵥ 的长度和夹角。
+  </text>
+</svg>
