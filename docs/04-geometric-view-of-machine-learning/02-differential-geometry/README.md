@@ -379,9 +379,7 @@ $$
 对两边同时对 `x` 求导。左边要用链式法则，因为切线角本身也是 `x` 的函数：
 
 $$
-\frac{d}{dx}\tan\theta
-=
-\frac{1}{\cos^2\theta}\cdot\frac{d\theta}{dx}
+\frac{d}{dx}\tan\theta=\frac{1}{\cos^2\theta}\cdot\frac{d\theta}{dx}
 $$
 
 右边就是：
@@ -411,11 +409,13 @@ $$
 所以：
 
 $$
-\begin{aligned}
-\cos^2\theta
-&=\frac{1}{1+\tan^2\theta}\\
-&=\frac{1}{1+(f'(x))^2}
-\end{aligned}
+\cos^2\theta=\frac{1}{1+\tan^2\theta}
+$$
+
+也就是：
+
+$$
+\cos^2\theta=\frac{1}{1+(f'(x))^2}
 $$
 
 代回去，就得到：
@@ -449,15 +449,19 @@ $$
 所以：
 
 $$
-\begin{aligned}
-\frac{d\theta}{ds}
-&=
-\frac{d\theta/dx}{ds/dx}\\
-&=
-\frac{\frac{f''(x)}{1+(f'(x))^2}}{\sqrt{1+(f'(x))^2}}\\
-&=
-\frac{f''(x)}{\left(1+(f'(x))^2\right)^{3/2}}
-\end{aligned}
+\frac{d\theta}{ds}=\frac{d\theta/dx}{ds/dx}
+$$
+
+把前面两个结果代进去：
+
+$$
+\frac{d\theta}{ds}=\frac{\frac{f''(x)}{1+(f'(x))^2}}{\sqrt{1+(f'(x))^2}}
+$$
+
+化简后得到：
+
+$$
+\frac{d\theta}{ds}=\frac{f''(x)}{\left(1+(f'(x))^2\right)^{3/2}}
 $$
 
 取绝对值以后，就得到平面曲线 `y=f(x)` 的曲率公式：
