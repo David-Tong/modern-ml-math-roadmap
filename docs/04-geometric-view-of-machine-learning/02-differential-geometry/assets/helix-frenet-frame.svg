@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+  <title id="title">空间螺旋线上的 Frenet-Serret 标架</title>
+  <desc id="desc">A helix around a cylinder with tangent, normal, and binormal vectors at one point.</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#d1242f"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1a7f37"/>
+    </marker>
+    <linearGradient id="cylinderFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f8fa" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#d0d7de" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="540" fill="#ffffff"/>
+
+  <ellipse cx="430" cy="112" rx="125" ry="38" fill="none" stroke="#8c959f" stroke-width="2" stroke-dasharray="8 8"/>
+  <ellipse cx="430" cy="425" rx="125" ry="38" fill="none" stroke="#8c959f" stroke-width="2"/>
+  <path d="M305 112 L305 425" stroke="#d0d7de" stroke-width="2" stroke-dasharray="8 8"/>
+  <path d="M555 112 L555 425" stroke="#d0d7de" stroke-width="2" stroke-dasharray="8 8"/>
+  <path d="M305 112 C330 150, 530 150, 555 112 L555 425 C530 463, 330 463, 305 425 Z"
+        fill="url(#cylinderFill)" stroke="none"/>
+  <text x="575" y="423" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#57606a">圆柱面</text>
+
+  <path d="M305 378
+           C350 330, 510 330, 555 378
+           C510 430, 350 430, 305 378
+           C350 320, 510 320, 555 272
+           C510 220, 350 220, 305 272
+           C350 318, 510 318, 555 272
+           C510 214, 350 214, 305 168
+           C350 118, 510 118, 555 168"
+        fill="none" stroke="#6f42c1" stroke-width="7" stroke-linecap="round"/>
+
+  <circle cx="555" cy="272" r="10" fill="#24292f"/>
+  <text x="572" y="264" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="21" fill="#24292f">点 p</text>
+
+  <line x1="555" y1="272" x2="628" y2="226" stroke="#1f6feb" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <text x="642" y="218" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="27" font-weight="700" fill="#1f6feb">T</text>
+  <text x="626" y="253" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#1f6feb">沿螺旋线前进</text>
+
+  <line x1="555" y1="272" x2="462" y2="272" stroke="#d1242f" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+  <text x="424" y="263" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="27" font-weight="700" fill="#d1242f">N</text>
+  <text x="378" y="300" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#d1242f">朝圆柱轴弯</text>
+
+  <line x1="555" y1="272" x2="600" y2="348" stroke="#1a7f37" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowGreen)"/>
+  <text x="614" y="366" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="27" font-weight="700" fill="#1a7f37">B</text>
+  <text x="604" y="400" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#1a7f37">密切平面朝向</text>
+
+  <text x="82" y="72" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="24" font-weight="700" fill="#24292f">空间螺旋线</text>
+  <text x="82" y="108" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#57606a">r(t) = (cos t, sin t, ct)</text>
+  <text x="82" y="474" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#57606a">
+    螺旋线一边绕圈一边上升；T、N、B 会沿曲线一起变化。
+  </text>
+</svg>

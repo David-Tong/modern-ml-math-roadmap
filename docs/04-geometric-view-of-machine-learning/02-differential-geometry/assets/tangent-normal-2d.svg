@@ -2,11 +2,11 @@
   <title id="title">二维曲线上的切向量和法向量</title>
   <desc id="desc">A two dimensional curve showing tangent vector T and its changing direction T prime, which is normal to T.</desc>
   <defs>
-    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#1f6feb"/>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1f6feb"/>
     </marker>
-    <marker id="arrowRed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#d1242f"/>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#d1242f"/>
     </marker>
     <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
       <path d="M0,0 L10,5 L0,10 Z" fill="#8c959f"/>
@@ -21,16 +21,16 @@
   <circle cx="500" cy="210" r="10" fill="#24292f"/>
   <text x="482" y="192" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#24292f">点 p</text>
 
-  <line x1="500" y1="210" x2="645" y2="232" stroke="#1f6feb" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
-  <text x="658" y="240" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#1f6feb">T</text>
-  <text x="655" y="270" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="19" fill="#1f6feb">当前前进方向</text>
+  <line x1="500" y1="210" x2="625" y2="229" stroke="#1f6feb" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <text x="640" y="232" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="26" font-weight="700" fill="#1f6feb">T</text>
+  <text x="635" y="264" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#1f6feb">当前前进方向</text>
 
-  <line x1="500" y1="210" x2="476" y2="72" stroke="#d1242f" stroke-width="7" stroke-linecap="round" marker-end="url(#arrowRed)"/>
-  <text x="424" y="70" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="30" font-weight="700" fill="#d1242f">T'</text>
-  <text x="360" y="100" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="19" fill="#d1242f">前进方向正在偏过去</text>
+  <line x1="500" y1="210" x2="480" y2="95" stroke="#d1242f" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+  <text x="430" y="82" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="26" font-weight="700" fill="#d1242f">T'</text>
+  <text x="338" y="115" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#d1242f">前进方向正在偏过去</text>
 
   <path d="M585 218 A85 85 0 0 0 516 132" fill="none" stroke="#8c959f" stroke-width="3" stroke-dasharray="7 8" marker-end="url(#arrowGray)"/>
-  <text x="594" y="168" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="19" fill="#57606a">T 在转向</text>
+  <text x="610" y="168" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#57606a">T 在转向</text>
 
   <path d="M642 232 L618 372" stroke="#d0d7de" stroke-width="3" stroke-dasharray="8 8"/>
   <text x="565" y="390" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#57606a">T' 垂直于 T</text>

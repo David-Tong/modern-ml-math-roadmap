@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">曲面上的 u 和 v 局部方向</title>
+  <desc id="desc">一张曲面上画出 u 坐标线、v 坐标线、点 p，以及沿 u 和 v 方向的切向量 r_u 和 r_v。</desc>
+  <defs>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#1f6feb"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#d1242f"/>
+    </marker>
+    <linearGradient id="surfaceFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#dbeafe" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f0f9ff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="planeFill" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6f8fa" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#d0d7de" stop-opacity="0.48"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="520" fill="#ffffff"/>
+
+  <path d="M105 333 C220 230, 335 242, 455 283 C585 326, 675 270, 795 178
+           L795 360 C690 420, 560 450, 420 402 C285 356, 200 382, 105 450 Z"
+        fill="url(#surfaceFill)" stroke="#8c959f" stroke-width="2"/>
+
+  <path d="M150 390 C270 298, 425 303, 730 230" fill="none" stroke="#60a5fa" stroke-width="4" stroke-dasharray="9 10"/>
+  <path d="M228 254 C315 331, 435 377, 612 405" fill="none" stroke="#f87171" stroke-width="4" stroke-dasharray="9 10"/>
+
+  <text x="720" y="215" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#1f6feb">u 坐标线</text>
+  <text x="612" y="432" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#d1242f">v 坐标线</text>
+
+  <polygon points="382,254 676,274 738,360 444,340" fill="url(#planeFill)" stroke="#8c959f" stroke-width="2"/>
+  <text x="632" y="354" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="24" fill="#57606a">切平面</text>
+
+  <circle cx="515" cy="305" r="9" fill="#24292f"/>
+  <text x="493" y="286" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="22" fill="#24292f">点 p</text>
+
+  <line x1="515" y1="305" x2="635" y2="314" stroke="#1f6feb" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowBlue)"/>
+  <text x="648" y="310" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="25" font-weight="700" fill="#1f6feb">r_u</text>
+  <text x="642" y="342" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#1f6feb">沿 u 方向</text>
+
+  <line x1="515" y1="305" x2="506" y2="217" stroke="#d1242f" stroke-width="4" stroke-linecap="round" marker-end="url(#arrowRed)"/>
+  <text x="462" y="200" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="25" font-weight="700" fill="#d1242f">r_v</text>
+  <text x="425" y="232" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="17" fill="#d1242f">沿 v 方向</text>
+
+  <text x="86" y="475" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="21" fill="#57606a">
+    r_u 和 r_v 是曲面在点 p 处的两个局部切向方向，它们张成切平面。
+  </text>
+</svg>
