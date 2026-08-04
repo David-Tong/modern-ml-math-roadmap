@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Hilbert 空间中的正交投影示意图</title>
+  <desc id="desc">目标函数 f 投影到候选空间 V，投影点为 v_star，误差 r=f-v_star 与候选空间 V 正交。</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626" />
+    </marker>
+  </defs>
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="40" y="42" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700" fill="#111827">正交投影：在候选空间里找到离目标最近的函数</text>
+
+  <line x1="90" y1="278" x2="670" y2="146" stroke="#374151" stroke-width="4"/>
+  <text x="640" y="128" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="20" fill="#374151">候选空间 V</text>
+
+  <circle cx="420" cy="94" r="8" fill="#2563eb"/>
+  <text x="434" y="88" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="20" fill="#2563eb">目标函数 f</text>
+
+  <circle cx="384" cy="211" r="8" fill="#059669"/>
+  <text x="398" y="226" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="20" fill="#059669">投影点 v_star</text>
+
+  <line x1="420" y1="94" x2="384" y2="211" stroke="#dc2626" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#arrow-red)"/>
+  <text x="430" y="158" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="20" fill="#dc2626">误差 r = f - v_star</text>
+
+  <path d="M 384 211 L 408 205 L 414 229" fill="none" stroke="#111827" stroke-width="2"/>
+  <text x="264" y="244" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="18" fill="#111827">误差方向垂直于候选空间</text>
+
+  <line x1="180" y1="258" x2="316" y2="227" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text x="122" y="286" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="18" fill="#2563eb">任意候选方向 v</text>
+
+  <text x="92" y="330" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="18" fill="#4b5563">几何条件：r 与 V 中所有方向正交</text>
+  <text x="405" y="330" font-family="Arial, 'Microsoft YaHei', sans-serif" font-size="18" fill="#4b5563">泛函条件：G(v)=&lt;r,v&gt;=0</text>
+</svg>
