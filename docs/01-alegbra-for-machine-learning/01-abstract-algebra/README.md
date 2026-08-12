@@ -129,19 +129,25 @@ $$
 矩阵乘法：
 
 $$
-\begin{pmatrix}
-2 & 0\\
+\left(
+\begin{array}{cc}
+2 & 0 \\
 0 & 3
-\end{pmatrix}
-\begin{pmatrix}
-0 & 1\\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+0 & 1 \\
 1 & 0
-\end{pmatrix}
+\end{array}
+\right)
 =
-\begin{pmatrix}
-0 & 2\\
+\left(
+\begin{array}{cc}
+0 & 2 \\
 3 & 0
-\end{pmatrix}
+\end{array}
+\right)
 $$
 
 向量点积：
@@ -153,18 +159,24 @@ $$
 向量外积：
 
 $$
-\begin{pmatrix}
-1\\
+\left(
+\begin{array}{c}
+1 \\
 1
-\end{pmatrix}
-\begin{pmatrix}
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
 1 & 2
-\end{pmatrix}
+\end{array}
+\right)
 =
-\begin{pmatrix}
-1 & 2\\
+\left(
+\begin{array}{cc}
+1 & 2 \\
 1 & 2
-\end{pmatrix}
+\end{array}
+\right)
 $$
 
 多项式乘法：
