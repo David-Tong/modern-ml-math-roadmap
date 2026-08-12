@@ -128,27 +128,21 @@ $$
 
 矩阵乘法：
 
-$$
-\left(
-\begin{array}{cc}
+```math
+\begin{bmatrix}
 2 & 0 \\
 0 & 3
-\end{array}
-\right)
-\left(
-\begin{array}{cc}
+\end{bmatrix}
+\begin{bmatrix}
 0 & 1 \\
 1 & 0
-\end{array}
-\right)
+\end{bmatrix}
 =
-\left(
-\begin{array}{cc}
+\begin{bmatrix}
 0 & 2 \\
 3 & 0
-\end{array}
-\right)
-$$
+\end{bmatrix}
+```
 
 向量点积：
 
@@ -158,26 +152,20 @@ $$
 
 向量外积：
 
-$$
-\left(
-\begin{array}{c}
+```math
+\begin{bmatrix}
 1 \\
 1
-\end{array}
-\right)
-\left(
-\begin{array}{cc}
+\end{bmatrix}
+\begin{bmatrix}
 1 & 2
-\end{array}
-\right)
+\end{bmatrix}
 =
-\left(
-\begin{array}{cc}
+\begin{bmatrix}
 1 & 2 \\
 1 & 2
-\end{array}
-\right)
-$$
+\end{bmatrix}
+```
 
 多项式乘法：
 
