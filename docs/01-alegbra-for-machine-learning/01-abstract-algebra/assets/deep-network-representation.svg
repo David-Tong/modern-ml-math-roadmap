@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+  <title id="title">A neural network with input, hidden, and output representations</title>
+  <desc id="desc">A typical neural network diagram showing input neurons, hidden neurons, output neurons, and transformations between representation spaces.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1,1 L9,5 L1,9 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font: 700 22px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .layer { font: 700 18px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #111827; }
+      .small { font: 15px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #374151; }
+      .math { font: 600 17px ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; fill: #1f2937; }
+      .node-in { fill: #ecfeff; stroke: #0891b2; stroke-width: 2.4; }
+      .node-hid { fill: #eff6ff; stroke: #2563eb; stroke-width: 2.4; }
+      .node-out { fill: #fff7ed; stroke: #f97316; stroke-width: 2.4; }
+      .edge { stroke: #94a3b8; stroke-width: 1.5; opacity: 0.72; }
+      .main-edge { stroke: #2563eb; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .badge { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.6; rx: 10; }
+      .hint { fill: #f8fafc; stroke: #e2e8f0; stroke-width: 1.4; rx: 10; }
+    </style>
+  </defs>
+
+  <rect width="980" height="420" fill="#ffffff"/>
+  <text x="490" y="38" text-anchor="middle" class="title">典型神经网络：表示空间之间的变换</text>
+
+  <text x="170" y="78" text-anchor="middle" class="layer">输入层</text>
+  <text x="490" y="78" text-anchor="middle" class="layer">隐藏层</text>
+  <text x="810" y="78" text-anchor="middle" class="layer">输出层</text>
+
+  <g>
+    <line x1="170" y1="116" x2="490" y2="108" class="edge"/>
+    <line x1="170" y1="116" x2="490" y2="148" class="edge"/>
+    <line x1="170" y1="116" x2="490" y2="188" class="edge"/>
+    <line x1="170" y1="116" x2="490" y2="228" class="edge"/>
+    <line x1="170" y1="116" x2="490" y2="268" class="edge"/>
+    <line x1="170" y1="156" x2="490" y2="108" class="edge"/>
+    <line x1="170" y1="156" x2="490" y2="148" class="edge"/>
+    <line x1="170" y1="156" x2="490" y2="188" class="edge"/>
+    <line x1="170" y1="156" x2="490" y2="228" class="edge"/>
+    <line x1="170" y1="156" x2="490" y2="268" class="edge"/>
+    <line x1="170" y1="196" x2="490" y2="108" class="edge"/>
+    <line x1="170" y1="196" x2="490" y2="148" class="edge"/>
+    <line x1="170" y1="196" x2="490" y2="188" class="edge"/>
+    <line x1="170" y1="196" x2="490" y2="228" class="edge"/>
+    <line x1="170" y1="196" x2="490" y2="268" class="edge"/>
+    <line x1="170" y1="236" x2="490" y2="108" class="edge"/>
+    <line x1="170" y1="236" x2="490" y2="148" class="edge"/>
+    <line x1="170" y1="236" x2="490" y2="188" class="edge"/>
+    <line x1="170" y1="236" x2="490" y2="228" class="edge"/>
+    <line x1="170" y1="236" x2="490" y2="268" class="edge"/>
+  </g>
+
+  <g>
+    <line x1="490" y1="108" x2="810" y2="136" class="edge"/>
+    <line x1="490" y1="108" x2="810" y2="176" class="edge"/>
+    <line x1="490" y1="108" x2="810" y2="216" class="edge"/>
+    <line x1="490" y1="148" x2="810" y2="136" class="edge"/>
+    <line x1="490" y1="148" x2="810" y2="176" class="edge"/>
+    <line x1="490" y1="148" x2="810" y2="216" class="edge"/>
+    <line x1="490" y1="188" x2="810" y2="136" class="edge"/>
+    <line x1="490" y1="188" x2="810" y2="176" class="edge"/>
+    <line x1="490" y1="188" x2="810" y2="216" class="edge"/>
+    <line x1="490" y1="228" x2="810" y2="136" class="edge"/>
+    <line x1="490" y1="228" x2="810" y2="176" class="edge"/>
+    <line x1="490" y1="228" x2="810" y2="216" class="edge"/>
+    <line x1="490" y1="268" x2="810" y2="136" class="edge"/>
+    <line x1="490" y1="268" x2="810" y2="176" class="edge"/>
+    <line x1="490" y1="268" x2="810" y2="216" class="edge"/>
+  </g>
+
+  <g>
+    <circle cx="170" cy="116" r="15" class="node-in"/>
+    <circle cx="170" cy="156" r="15" class="node-in"/>
+    <circle cx="170" cy="196" r="15" class="node-in"/>
+    <circle cx="170" cy="236" r="15" class="node-in"/>
+    <text x="170" y="282" text-anchor="middle" class="small">...</text>
+  </g>
+
+  <g>
+    <circle cx="490" cy="108" r="15" class="node-hid"/>
+    <circle cx="490" cy="148" r="15" class="node-hid"/>
+    <circle cx="490" cy="188" r="15" class="node-hid"/>
+    <circle cx="490" cy="228" r="15" class="node-hid"/>
+    <circle cx="490" cy="268" r="15" class="node-hid"/>
+    <text x="490" y="306" text-anchor="middle" class="small">...</text>
+  </g>
+
+  <g>
+    <circle cx="810" cy="136" r="15" class="node-out"/>
+    <circle cx="810" cy="176" r="15" class="node-out"/>
+    <circle cx="810" cy="216" r="15" class="node-out"/>
+    <text x="810" y="254" text-anchor="middle" class="small">...</text>
+  </g>
+
+  <rect x="294" y="304" width="110" height="42" class="badge"/>
+  <text x="349" y="330" text-anchor="middle" class="math">T1</text>
+  <path d="M252 326 H294" class="main-edge"/>
+  <path d="M404 326 H448" class="main-edge"/>
+
+  <rect x="612" y="304" width="110" height="42" class="badge"/>
+  <text x="667" y="330" text-anchor="middle" class="math">T2</text>
+  <path d="M570 326 H612" class="main-edge"/>
+  <path d="M722 326 H766" class="main-edge"/>
+
+  <rect x="60" y="342" width="220" height="50" class="hint"/>
+  <text x="170" y="363" text-anchor="middle" class="math">x0 in R^784</text>
+  <text x="170" y="384" text-anchor="middle" class="small">输入表示：像素</text>
+
+  <rect x="380" y="342" width="220" height="50" class="hint"/>
+  <text x="490" y="363" text-anchor="middle" class="math">x1 in R^128</text>
+  <text x="490" y="384" text-anchor="middle" class="small">隐藏表示：特征</text>
+
+  <rect x="700" y="342" width="220" height="50" class="hint"/>
+  <text x="810" y="363" text-anchor="middle" class="math">x2 in R^10</text>
+  <text x="810" y="384" text-anchor="middle" class="small">输出表示：类别分数</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="580" viewBox="0 0 980 580" role="img" aria-labelledby="title desc">
+  <title id="title">Neural network design through addition and composition</title>
+  <desc id="desc">Two diagrams show composition as serial layers and addition as merging parallel paths.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#263238"/>
+    </marker>
+    <style>
+      .panel { fill: #f8faf9; stroke: #cfd8d3; stroke-width: 1.5; rx: 8; }
+      .title { font: 700 20px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #1f2a2e; }
+      .label { font: 500 16px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #253238; }
+      .small { font: 400 14px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #53636a; }
+      .formula { font: 600 18px "Times New Roman", serif; fill: #263238; }
+      .node { fill: #ffffff; stroke: #2f6f73; stroke-width: 2; }
+      .block { fill: #ffffff; stroke: #4c6b8a; stroke-width: 2; rx: 8; }
+      .merge { fill: #fff8e7; stroke: #b68122; stroke-width: 2; }
+      .line { stroke: #263238; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .soft { stroke: #8da0a6; stroke-width: 1.6; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect x="24" y="30" width="932" height="510" class="panel"/>
+
+  <text x="64" y="76" class="title">神经网络设计里的两种代数动作</text>
+  <text x="64" y="104" class="small">相乘 = 串联复合；相加 = 多条路径汇合</text>
+
+  <g transform="translate(64,145)">
+    <text x="0" y="0" class="label">1. 串联层：乘法 / 复合</text>
+    <circle cx="36" cy="64" r="18" class="node"/>
+    <rect x="94" y="39" width="86" height="50" class="block"/>
+    <rect x="232" y="39" width="86" height="50" class="block"/>
+    <circle cx="382" cy="64" r="18" class="node"/>
+    <path d="M54 64 H90" class="line"/>
+    <path d="M180 64 H228" class="line"/>
+    <path d="M318 64 H360" class="line"/>
+    <text x="29" y="69" class="formula">x</text>
+    <text x="124" y="69" class="formula">W1</text>
+    <text x="262" y="69" class="formula">W2</text>
+    <text x="372" y="69" class="formula">y</text>
+    <text x="74" y="122" class="small">先做 W1，再做 W2，整体是 W2W1</text>
+  </g>
+
+  <g transform="translate(64,295)">
+    <text x="0" y="0" class="label">2. 并联路径：加法 / 汇合</text>
+    <circle cx="36" cy="76" r="18" class="node"/>
+    <rect x="110" y="35" width="86" height="48" class="block"/>
+    <rect x="110" y="102" width="86" height="48" class="block"/>
+    <circle cx="265" cy="76" r="20" class="merge"/>
+    <circle cx="350" cy="76" r="18" class="node"/>
+    <path d="M54 76 C80 76, 82 59, 106 59" class="line"/>
+    <path d="M54 76 C80 76, 82 126, 106 126" class="line"/>
+    <path d="M196 59 C226 59, 230 76, 245 76" class="line"/>
+    <path d="M196 126 C226 126, 230 76, 245 76" class="line"/>
+    <path d="M285 76 H328" class="line"/>
+    <text x="29" y="81" class="formula">x</text>
+    <text x="141" y="65" class="formula">A</text>
+    <text x="141" y="132" class="formula">B</text>
+    <text x="259" y="82" class="formula">+</text>
+    <text x="340" y="81" class="formula">y</text>
+    <text x="78" y="176" class="small">两条路径分别算 Ax 和 Bx，汇合成 Ax + Bx</text>
+  </g>
+
+  <g transform="translate(535,190)">
+    <text x="0" y="0" class="label">这张图先只看两件事</text>
+    <text x="0" y="42" class="small">串联层对应复合，也就是这里说的“乘法”。</text>
+    <text x="0" y="76" class="small">并联路径最后汇合，对应这里说的“加法”。</text>
+    <text x="0" y="126" class="small">残差块会在下一小节单独画，因为它同时使用</text>
+    <text x="0" y="158" class="small">恒等路径、学习路径和加法汇合。</text>
+  </g>
+</svg>
