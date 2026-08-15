@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="520" viewBox="0 0 1080 520" role="img" aria-labelledby="title desc">
+  <title id="title">Constructing multiplication and division with similar triangles</title>
+  <desc id="desc">Two geometric constructions using a fixed unit length. The left panel constructs x = ab from x over b equals a over 1. The right panel constructs x = a over b from x over 1 equals a over b.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#263238"/>
+    </marker>
+    <style>
+      .frame { fill: #f8faf9; stroke: #cfd8d3; stroke-width: 1.5; rx: 8; }
+      .panel { fill: #ffffff; stroke: #d8e0dc; stroke-width: 1.5; rx: 8; }
+      .title { font: 700 24px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #1f2a2e; }
+      .heading { font: 700 19px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #253238; }
+      .small { font: 400 15px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #566970; }
+      .formula { font: 600 20px "Times New Roman", serif; fill: #263238; }
+      .axis { stroke: #263238; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .line { stroke: #2f6f73; stroke-width: 2.5; fill: none; }
+      .helper { stroke: #7b8b91; stroke-width: 2; stroke-dasharray: 7 6; fill: none; }
+      .point { fill: #2f6f73; }
+      .seg { stroke: #b68122; stroke-width: 4; stroke-linecap: round; }
+      .result { stroke: #c43d2b; stroke-width: 5; stroke-linecap: round; }
+      .resultText { font: 700 18px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #c43d2b; }
+    </style>
+  </defs>
+
+  <rect x="24" y="24" width="1032" height="452" class="frame"/>
+  <text x="58" y="70" class="title">尺规作图里的乘法和除法：固定单位长度 1，用相似三角形做比例</text>
+
+  <rect x="58" y="104" width="464" height="330" class="panel"/>
+  <text x="88" y="142" class="heading">构造乘法：x = a b</text>
+  <text x="88" y="168" class="small">让两个三角形相似，满足 x / b = a / 1</text>
+
+  <path d="M110 370 H455" class="axis"/>
+  <path d="M110 370 V195" class="axis"/>
+  <path d="M110 370 L410 220" class="line"/>
+  <path d="M210 370 V320" class="helper"/>
+  <path d="M390 370 V230" class="helper"/>
+  <circle cx="110" cy="370" r="4" class="point"/>
+  <circle cx="210" cy="370" r="4" class="point"/>
+  <circle cx="390" cy="370" r="4" class="point"/>
+  <circle cx="210" cy="320" r="4" class="point"/>
+  <circle cx="390" cy="230" r="4" class="point"/>
+  <path d="M110 370 H210" class="seg"/>
+  <path d="M110 370 V320" class="seg"/>
+  <path d="M110 370 H390" class="seg"/>
+  <path d="M110 370 V230" class="result"/>
+  <text x="150" y="397" class="formula">1</text>
+  <text x="70" y="350" class="formula">a</text>
+  <text x="245" y="397" class="formula">b</text>
+  <text x="48" y="284" class="resultText">结果：x = ab</text>
+  <text x="150" y="238" class="small">小三角形：高 / 底 = a / 1</text>
+  <text x="248" y="276" class="small">大三角形：高 / 底 = x / b</text>
+  <text x="170" y="418" class="formula">x / b = a / 1，所以红色线段 x = ab</text>
+
+  <rect x="558" y="104" width="464" height="330" class="panel"/>
+  <text x="588" y="142" class="heading">构造除法：x = a / b</text>
+  <text x="588" y="168" class="small">让两个三角形相似，满足 x / 1 = a / b</text>
+
+  <path d="M610 370 H955" class="axis"/>
+  <path d="M610 370 V195" class="axis"/>
+  <path d="M610 370 L910 220" class="line"/>
+  <path d="M720 370 V315" class="helper"/>
+  <path d="M900 370 V225" class="helper"/>
+  <circle cx="610" cy="370" r="4" class="point"/>
+  <circle cx="720" cy="370" r="4" class="point"/>
+  <circle cx="900" cy="370" r="4" class="point"/>
+  <circle cx="720" cy="315" r="4" class="point"/>
+  <circle cx="900" cy="225" r="4" class="point"/>
+  <path d="M610 370 H720" class="seg"/>
+  <path d="M610 370 V315" class="result"/>
+  <path d="M610 370 H900" class="seg"/>
+  <path d="M610 370 V225" class="seg"/>
+  <text x="650" y="397" class="formula">1</text>
+  <text x="540" y="348" class="resultText">结果：x = a / b</text>
+  <text x="760" y="397" class="formula">b</text>
+  <text x="570" y="275" class="formula">a</text>
+  <text x="650" y="238" class="small">小三角形：高 / 底 = x / 1</text>
+  <text x="750" y="276" class="small">大三角形：高 / 底 = a / b</text>
+  <text x="670" y="418" class="formula">x / 1 = a / b，所以红色线段 x = a / b</text>
+</svg>

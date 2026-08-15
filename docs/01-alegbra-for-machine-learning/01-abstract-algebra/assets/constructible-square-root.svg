@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420" role="img" aria-labelledby="title desc">
+  <title id="title">Constructing square root by ruler and compass</title>
+  <desc id="desc">Put lengths 1 and a on a line, draw a semicircle over total length 1 plus a, and the perpendicular at the split point has length square root of a.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8faf9; stroke: #cfd8d3; stroke-width: 1.5; rx: 8; }
+      .panel { fill: #ffffff; stroke: #d8e0dc; stroke-width: 1.4; rx: 8; }
+      .title { font: 700 24px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #1f2a2e; }
+      .label { font: 700 18px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #253238; }
+      .small { font: 400 15px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #566970; }
+      .formula { font: 600 20px "Times New Roman", serif; fill: #263238; }
+      .base { stroke: #263238; stroke-width: 2.4; stroke-linecap: round; }
+      .unit { stroke: #b68122; stroke-width: 6; stroke-linecap: round; }
+      .aval { stroke: #4c6b8a; stroke-width: 6; stroke-linecap: round; }
+      .semi { stroke: #2f6f73; stroke-width: 3; fill: none; }
+      .helper { stroke: #9aa8ad; stroke-width: 2; stroke-dasharray: 7 6; fill: none; }
+      .result { stroke: #c43d2b; stroke-width: 6; stroke-linecap: round; }
+      .point { fill: #2f6f73; }
+      .resultText { font: 700 19px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #c43d2b; }
+    </style>
+  </defs>
+
+  <rect x="24" y="24" width="932" height="348" class="bg"/>
+  <text x="58" y="68" class="title">尺规作图构造平方根：AD = 1，DB = a，PD = sqrt(a)</text>
+
+  <rect x="58" y="95" width="560" height="242" class="panel"/>
+  <rect x="650" y="95" width="272" height="242" class="panel"/>
+
+  <path d="M110 300 H530" class="base"/>
+  <path d="M110 300 H250" class="unit"/>
+  <path d="M250 300 H530" class="aval"/>
+  <path d="M110 300 A210 210 0 0 1 530 300" class="semi"/>
+  <path d="M250 300 V102" class="result"/>
+  <path d="M110 300 L250 102 L530 300" class="helper"/>
+
+  <circle cx="110" cy="300" r="5" class="point"/>
+  <circle cx="250" cy="300" r="5" class="point"/>
+  <circle cx="530" cy="300" r="5" class="point"/>
+  <circle cx="250" cy="102" r="5" class="point"/>
+
+  <text x="164" y="330" class="formula">AD = 1</text>
+  <text x="365" y="330" class="formula">DB = a</text>
+  <text x="267" y="196" class="resultText">PD = h = sqrt(a)</text>
+  <text x="96" y="278" class="label">A</text>
+  <text x="236" y="278" class="label">D</text>
+  <text x="522" y="278" class="label">B</text>
+  <text x="238" y="98" class="label">P</text>
+
+  <text x="680" y="132" class="label">作法</text>
+  <text x="680" y="166" class="small">1. 在直线上取 AD=1，DB=a。</text>
+  <text x="680" y="196" class="small">2. 以 AB 为直径画半圆。</text>
+  <text x="680" y="226" class="small">3. 过 D 作垂线交半圆于 P。</text>
+
+  <text x="680" y="272" class="label">结论</text>
+  <text x="680" y="304" class="formula">1 / h = h / a</text>
+  <text x="680" y="330" class="formula">PD = h = sqrt(a)</text>
+</svg>
