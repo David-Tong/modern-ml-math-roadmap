@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Riemann 积分按定义域切分时遇到 Dirichlet 函数</title>
+  <desc id="desc">每个小区间里同时有函数值 0 和 1，因此上方矩形高度总是 1，下方矩形高度总是 0。</desc>
+  <rect width="760" height="360" fill="#fbfaf7"/>
+  <g transform="translate(74 48)">
+    <line x1="0" y1="238" x2="612" y2="238" stroke="#2f3542" stroke-width="2"/>
+    <line x1="0" y1="238" x2="0" y2="28" stroke="#2f3542" stroke-width="2"/>
+    <text x="-10" y="244" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#2f3542">0</text>
+    <text x="-10" y="44" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#2f3542">1</text>
+    <text x="0" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#2f3542">0</text>
+    <text x="612" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#2f3542">1</text>
+
+    <g fill="#dbeafe" stroke="#3b82f6" stroke-width="2" opacity="0.72">
+      <rect x="0" y="38" width="76.5" height="200"/>
+      <rect x="76.5" y="38" width="76.5" height="200"/>
+      <rect x="153" y="38" width="76.5" height="200"/>
+      <rect x="229.5" y="38" width="76.5" height="200"/>
+      <rect x="306" y="38" width="76.5" height="200"/>
+      <rect x="382.5" y="38" width="76.5" height="200"/>
+      <rect x="459" y="38" width="76.5" height="200"/>
+      <rect x="535.5" y="38" width="76.5" height="200"/>
+    </g>
+
+    <g stroke="#94a3b8" stroke-width="1.4">
+      <line x1="76.5" y1="34" x2="76.5" y2="244"/>
+      <line x1="153" y1="34" x2="153" y2="244"/>
+      <line x1="229.5" y1="34" x2="229.5" y2="244"/>
+      <line x1="306" y1="34" x2="306" y2="244"/>
+      <line x1="382.5" y1="34" x2="382.5" y2="244"/>
+      <line x1="459" y1="34" x2="459" y2="244"/>
+      <line x1="535.5" y1="34" x2="535.5" y2="244"/>
+    </g>
+
+    <g fill="#ef4444">
+      <circle cx="28" cy="38" r="4"/><circle cx="51" cy="38" r="4"/><circle cx="86" cy="38" r="4"/>
+      <circle cx="128" cy="38" r="4"/><circle cx="171" cy="38" r="4"/><circle cx="211" cy="38" r="4"/>
+      <circle cx="248" cy="38" r="4"/><circle cx="292" cy="38" r="4"/><circle cx="326" cy="38" r="4"/>
+      <circle cx="370" cy="38" r="4"/><circle cx="407" cy="38" r="4"/><circle cx="452" cy="38" r="4"/>
+      <circle cx="487" cy="38" r="4"/><circle cx="529" cy="38" r="4"/><circle cx="566" cy="38" r="4"/>
+      <circle cx="598" cy="38" r="4"/>
+    </g>
+    <g fill="#111827">
+      <circle cx="14" cy="238" r="4"/><circle cx="67" cy="238" r="4"/><circle cx="105" cy="238" r="4"/>
+      <circle cx="144" cy="238" r="4"/><circle cx="190" cy="238" r="4"/><circle cx="224" cy="238" r="4"/>
+      <circle cx="266" cy="238" r="4"/><circle cx="304" cy="238" r="4"/><circle cx="348" cy="238" r="4"/>
+      <circle cx="391" cy="238" r="4"/><circle cx="430" cy="238" r="4"/><circle cx="474" cy="238" r="4"/>
+      <circle cx="515" cy="238" r="4"/><circle cx="552" cy="238" r="4"/><circle cx="589" cy="238" r="4"/>
+    </g>
+
+    <text x="306" y="306" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1f2937">不管区间切多细，每一段里都有 0 和 1</text>
+    <text x="306" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#334155">上方估计总是高度 1，下方估计总是高度 0</text>
+  </g>
+</svg>
