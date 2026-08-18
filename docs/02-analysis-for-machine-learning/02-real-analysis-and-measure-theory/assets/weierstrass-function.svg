@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">Weierstrass 函数示意图</title>
+  <desc id="desc">用锯齿状连续曲线示意处处不可导的 Weierstrass 函数。</desc>
+  <rect width="720" height="260" fill="#ffffff"/>
+  <line x1="60" y1="130" x2="660" y2="130" stroke="#e5e7eb" stroke-width="2"/>
+  <line x1="60" y1="210" x2="660" y2="210" stroke="#1f2937" stroke-width="2"/>
+  <line x1="60" y1="40" x2="60" y2="220" stroke="#1f2937" stroke-width="2"/>
+  <text x="665" y="216" font-family="Arial, sans-serif" font-size="14" fill="#374151">自变量</text>
+  <text x="22" y="34" font-family="Arial, sans-serif" font-size="14" fill="#374151">函数值</text>
+  <polyline fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"
+    points="60,137 72,93 84,118 96,66 108,151 120,104 132,168 144,75 156,129 168,111 180,190 192,83 204,143 216,56 228,154 240,121 252,176 264,91 276,135 288,101 300,185 312,79 324,146 336,61 348,158 360,116 372,181 384,86 396,141 408,97 420,193 432,82 444,148 456,58 468,161 480,119 492,178 504,88 516,138 528,103 540,187 552,77 564,144 576,64 588,156 600,114 612,173 624,93 636,131 648,108 660,169"/>
+  <text x="198" y="245" font-family="Arial, sans-serif" font-size="14" fill="#374151">连续，但在每个尺度上都有细小振荡</text>
+</svg>

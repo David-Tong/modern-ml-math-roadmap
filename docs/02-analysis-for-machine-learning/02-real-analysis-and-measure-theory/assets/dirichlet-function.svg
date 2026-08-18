@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">Dirichlet 函数示意图</title>
+  <desc id="desc">用密集点阵示意有理数处函数值为 0、无理数处函数值为 1。</desc>
+  <defs>
+    <pattern id="blueDots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.35" fill="#2563eb" opacity="0.82"/>
+      <circle cx="6" cy="6" r="1.35" fill="#2563eb" opacity="0.82"/>
+    </pattern>
+    <pattern id="redDots" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="6" r="1.35" fill="#dc2626" opacity="0.82"/>
+      <circle cx="6" cy="2" r="1.35" fill="#dc2626" opacity="0.82"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="260" fill="#ffffff"/>
+  <line x1="60" y1="210" x2="660" y2="210" stroke="#1f2937" stroke-width="2"/>
+  <line x1="60" y1="40" x2="60" y2="220" stroke="#1f2937" stroke-width="2"/>
+  <text x="665" y="216" font-family="Arial, sans-serif" font-size="14" fill="#374151">自变量</text>
+  <text x="22" y="34" font-family="Arial, sans-serif" font-size="14" fill="#374151">函数值</text>
+  <line x1="55" y1="70" x2="65" y2="70" stroke="#1f2937" stroke-width="2"/>
+  <line x1="55" y1="210" x2="65" y2="210" stroke="#1f2937" stroke-width="2"/>
+  <text x="35" y="75" font-family="Arial, sans-serif" font-size="14" fill="#374151">1</text>
+  <text x="35" y="215" font-family="Arial, sans-serif" font-size="14" fill="#374151">0</text>
+  <rect x="60" y="63" width="600" height="14" fill="url(#redDots)"/>
+  <rect x="60" y="203" width="600" height="14" fill="url(#blueDots)"/>
+  <line x1="60" y1="70" x2="660" y2="70" stroke="#dc2626" stroke-width="1" opacity="0.35"/>
+  <line x1="60" y1="210" x2="660" y2="210" stroke="#2563eb" stroke-width="1" opacity="0.35"/>
+  <text x="190" y="52" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">无理数层：函数值为 1</text>
+  <text x="190" y="198" font-family="Arial, sans-serif" font-size="14" fill="#2563eb">有理数层：函数值为 0</text>
+  <text x="178" y="245" font-family="Arial, sans-serif" font-size="14" fill="#374151">示意：任意小区间里两层点都很密</text>
+</svg>
