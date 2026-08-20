@@ -4,10 +4,10 @@
   <rect width="720" height="260" fill="#ffffff"/>
   <line x1="60" y1="130" x2="660" y2="130" stroke="#1f2937" stroke-width="2"/>
   <line x1="360" y1="40" x2="360" y2="220" stroke="#1f2937" stroke-width="2"/>
-  <text x="665" y="136" font-family="Arial, sans-serif" font-size="14" fill="#374151">自变量</text>
-  <text x="320" y="34" font-family="Arial, sans-serif" font-size="14" fill="#374151">函数值</text>
+  <text x="608" y="148" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="14" fill="#374151">自变量</text>
+  <text x="320" y="34" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="14" fill="#374151">函数值</text>
   <path d="M 660 91 C 620 70, 590 189, 558 151 C 530 117, 505 70, 480 128 C 458 180, 438 62, 420 138 C 405 197, 390 55, 378 138 C 369 201, 362 58, 356 132 C 350 201, 343 61, 335 137 C 322 222, 308 42, 292 139 C 272 206, 252 63, 230 128 C 204 190, 176 78, 146 136 C 118 184, 90 97, 60 151" fill="none" stroke="#059669" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
   <line x1="360" y1="50" x2="360" y2="210" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="5 5"/>
-  <text x="380" y="62" font-family="Arial, sans-serif" font-size="14" fill="#ef4444">零点附近</text>
-  <text x="224" y="245" font-family="Arial, sans-serif" font-size="14" fill="#374151">越靠近 0，振荡越快</text>
+  <text x="380" y="62" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="14" fill="#ef4444">零点附近</text>
+  <text x="244" y="245" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="14" fill="#374151">越靠近 0，振荡越快</text>
 </svg>

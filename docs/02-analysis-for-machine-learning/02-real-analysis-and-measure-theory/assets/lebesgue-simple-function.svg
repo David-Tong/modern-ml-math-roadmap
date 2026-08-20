@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="400" viewBox="0 0 820 400" role="img" aria-labelledby="title desc">
   <title id="title">简单函数的 Lebesgue 积分</title>
   <desc id="desc">简单函数只取有限多个高度，积分等于每个高度乘以对应集合的测度，再求和。</desc>
-  <rect width="760" height="360" fill="#fbfaf7"/>
+  <rect width="820" height="400" fill="#fbfaf7"/>
   <g transform="translate(76 48)">
     <line x1="0" y1="250" x2="610" y2="250" stroke="#2f3542" stroke-width="2"/>
     <line x1="0" y1="250" x2="0" y2="30" stroke="#2f3542" stroke-width="2"/>
@@ -10,14 +10,14 @@
     <rect x="206" y="110" width="170" height="140" fill="#bfdbfe" stroke="#2563eb" stroke-width="2"/>
     <rect x="420" y="62" width="150" height="188" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
 
-    <text x="93" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#92400e">高度 a1</text>
-    <text x="291" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#1d4ed8">高度 a2</text>
-    <text x="495" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#b91c1c">高度 a3</text>
+    <text x="93" y="158" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#92400e">高度 a1</text>
+    <text x="291" y="98" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#1d4ed8">高度 a2</text>
+    <text x="495" y="50" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#b91c1c">高度 a3</text>
 
-    <text x="93" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#374151">集合 A1</text>
-    <text x="291" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#374151">集合 A2</text>
-    <text x="495" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#374151">集合 A3</text>
+    <text x="93" y="282" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#374151">集合 A1</text>
+    <text x="291" y="282" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#374151">集合 A2</text>
+    <text x="495" y="282" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#374151">集合 A3</text>
 
-    <text x="305" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#1f2937">积分 = a1 m(A1) + a2 m(A2) + a3 m(A3)</text>
+    <text x="305" y="322" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="21" fill="#1f2937">积分 = a1 m(A1) + a2 m(A2) + a3 m(A3)</text>
   </g>
 </svg>

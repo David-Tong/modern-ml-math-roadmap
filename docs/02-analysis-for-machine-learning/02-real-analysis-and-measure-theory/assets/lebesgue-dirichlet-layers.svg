@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="400" viewBox="0 0 820 400" role="img" aria-labelledby="title desc">
   <title id="title">Lebesgue 积分按函数值分层</title>
   <desc id="desc">Dirichlet 函数只取 0 和 1。取 0 的有理数层测度为 0，取 1 的无理数层测度为 1。</desc>
-  <rect width="760" height="360" fill="#fbfaf7"/>
+  <rect width="820" height="400" fill="#fbfaf7"/>
   <g transform="translate(86 42)">
     <line x1="0" y1="248" x2="590" y2="248" stroke="#2f3542" stroke-width="2"/>
     <line x1="0" y1="248" x2="0" y2="34" stroke="#2f3542" stroke-width="2"/>
-    <text x="-12" y="254" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#2f3542">0</text>
-    <text x="-12" y="50" text-anchor="end" font-family="Arial, sans-serif" font-size="18" fill="#2f3542">1</text>
+    <text x="-12" y="254" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#2f3542">0</text>
+    <text x="-12" y="50" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="18" fill="#2f3542">1</text>
 
     <rect x="0" y="48" width="590" height="200" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-    <text x="295" y="142" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#166534">无理数层</text>
-    <text x="295" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#166534">函数值 = 1，测度 = 1</text>
-    <text x="295" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#166534">贡献面积：1 × 1 = 1</text>
+    <text x="295" y="142" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="24" font-weight="700" fill="#166534">无理数层</text>
+    <text x="295" y="176" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#166534">函数值 = 1，测度 = 1</text>
+    <text x="295" y="216" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#166534">贡献面积：1 × 1 = 1</text>
 
     <line x1="0" y1="248" x2="590" y2="248" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/>
-    <text x="295" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#991b1b">有理数层：函数值 = 0，测度 = 0，贡献面积 = 0</text>
+    <text x="295" y="286" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#991b1b">有理数层：函数值 = 0，测度 = 0，贡献面积 = 0</text>
 
-    <text x="295" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1f2937">先按函数值分成两层，再算每层有多大</text>
+    <text x="295" y="20" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="20" fill="#1f2937">先按函数值分成两层，再算每层有多大</text>
   </g>
 </svg>
