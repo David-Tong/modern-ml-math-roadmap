@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430">
+  <rect width="820" height="430" fill="#ffffff"/>
+  <style>
+    text { font-family: "Microsoft YaHei", "SimHei", Arial, sans-serif; fill: #273043; }
+    .title { font-size: 22px; font-weight: 700; }
+    .label { font-size: 15px; fill: #596579; }
+    .frac { font-size: 22px; }
+    .line { stroke: #d8deea; stroke-width: 1; }
+    .diag { stroke: #e76f51; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    .node { fill: #f7f9fc; stroke: #cfd7e6; stroke-width: 1.2; rx: 8; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e76f51"/>
+    </marker>
+  </defs>
+
+  <text x="250" y="36" class="title">把正有理数排成一张表</text>
+  <text x="78" y="74" class="label">分子 p</text>
+  <text x="650" y="74" class="label">分母 q</text>
+
+  <g transform="translate(120 95)">
+    <line x1="0" y1="0" x2="560" y2="0" class="line"/>
+    <line x1="0" y1="70" x2="560" y2="70" class="line"/>
+    <line x1="0" y1="140" x2="560" y2="140" class="line"/>
+    <line x1="0" y1="210" x2="560" y2="210" class="line"/>
+    <line x1="0" y1="280" x2="560" y2="280" class="line"/>
+    <line x1="0" y1="0" x2="0" y2="280" class="line"/>
+    <line x1="140" y1="0" x2="140" y2="280" class="line"/>
+    <line x1="280" y1="0" x2="280" y2="280" class="line"/>
+    <line x1="420" y1="0" x2="420" y2="280" class="line"/>
+    <line x1="560" y1="0" x2="560" y2="280" class="line"/>
+
+    <rect x="28" y="18" width="84" height="34" class="node"/>
+    <rect x="168" y="18" width="84" height="34" class="node"/>
+    <rect x="308" y="18" width="84" height="34" class="node"/>
+    <rect x="448" y="18" width="84" height="34" class="node"/>
+    <rect x="28" y="88" width="84" height="34" class="node"/>
+    <rect x="168" y="88" width="84" height="34" class="node"/>
+    <rect x="308" y="88" width="84" height="34" class="node"/>
+    <rect x="448" y="88" width="84" height="34" class="node"/>
+    <rect x="28" y="158" width="84" height="34" class="node"/>
+    <rect x="168" y="158" width="84" height="34" class="node"/>
+    <rect x="308" y="158" width="84" height="34" class="node"/>
+    <rect x="448" y="158" width="84" height="34" class="node"/>
+
+    <text x="57" y="43" class="frac">1/1</text>
+    <text x="197" y="43" class="frac">1/2</text>
+    <text x="337" y="43" class="frac">1/3</text>
+    <text x="474" y="43" class="frac">...</text>
+    <text x="57" y="113" class="frac">2/1</text>
+    <text x="197" y="113" class="frac">2/2</text>
+    <text x="337" y="113" class="frac">2/3</text>
+    <text x="474" y="113" class="frac">...</text>
+    <text x="57" y="183" class="frac">3/1</text>
+    <text x="197" y="183" class="frac">3/2</text>
+    <text x="337" y="183" class="frac">3/3</text>
+    <text x="474" y="183" class="frac">...</text>
+    <text x="58" y="253" class="frac">...</text>
+    <text x="198" y="253" class="frac">...</text>
+    <text x="338" y="253" class="frac">...</text>
+    <text x="472" y="253" class="frac">...</text>
+
+    <path d="M70 35 L70 105 L210 35 L350 35 L210 105 L70 175 L70 245" class="diag"/>
+  </g>
+
+  <text x="155" y="402" class="label">沿对角线一层层扫：每层只有有限多个分数，任何一个 p/q 迟早会被扫到。</text>
+</svg>
