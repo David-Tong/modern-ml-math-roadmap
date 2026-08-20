@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="500" viewBox="0 0 1080 500">
+  <rect width="1080" height="500" fill="#ffffff"/>
+  <style>
+    text { font-family: "Microsoft YaHei", "SimHei", Arial, sans-serif; fill: #253047; }
+    .title { font-size: 22px; font-weight: 700; }
+    .label { font-size: 15px; }
+    .small { font-size: 13px; fill: #56627a; }
+    .axis { stroke: #253047; stroke-width: 1.5; }
+    .grid { stroke: #d7dde8; stroke-width: 1; }
+    .curve { fill: none; stroke: #1f6feb; stroke-width: 3; }
+    .area { fill: #dbeafe; stroke: none; opacity: 0.95; }
+    .slice { fill: #7fb3ff; opacity: 0.45; stroke: #1f6feb; stroke-width: 1; }
+    .layer { fill: #ffb86b; opacity: 0.36; stroke: #c26a1b; stroke-width: 1; }
+    .note { fill: #f7f9fc; stroke: #d8deea; stroke-width: 1; rx: 8; }
+  </style>
+
+  <text x="110" y="44" class="title">同一块面积：竖着切</text>
+  <text x="635" y="44" class="title">同一块面积：横着切</text>
+
+  <!-- Left panel -->
+  <g transform="translate(90 82)">
+    <line x1="0" y1="280" x2="360" y2="280" class="axis"/>
+    <line x1="180" y1="280" x2="180" y2="20" class="axis"/>
+    <text x="374" y="285" class="label">x</text>
+    <text x="190" y="14" class="label">y</text>
+    <text x="-12" y="306" class="small">-1</text>
+    <text x="172" y="306" class="small">0</text>
+    <text x="354" y="306" class="small">1</text>
+    <text x="190" y="284" class="small">0</text>
+    <text x="190" y="42" class="small">1</text>
+
+    <line x1="0" y1="40" x2="360" y2="40" class="grid"/>
+    <line x1="0" y1="160" x2="360" y2="160" class="grid"/>
+
+    <path d="M0 280 C50 150, 110 55, 180 40 C250 55, 310 150, 360 280 L0 280 Z" class="area"/>
+    <!-- Riemann rectangles, approximating 1-x^2 on [-1,1] -->
+    <rect x="0" y="252" width="22.5" height="28" class="slice"/>
+    <rect x="22.5" y="216" width="22.5" height="64" class="slice"/>
+    <rect x="45" y="184" width="22.5" height="96" class="slice"/>
+    <rect x="67.5" y="154" width="22.5" height="126" class="slice"/>
+    <rect x="90" y="128" width="22.5" height="152" class="slice"/>
+    <rect x="112.5" y="106" width="22.5" height="174" class="slice"/>
+    <rect x="135" y="88" width="22.5" height="192" class="slice"/>
+    <rect x="157.5" y="76" width="22.5" height="204" class="slice"/>
+    <rect x="180" y="76" width="22.5" height="204" class="slice"/>
+    <rect x="202.5" y="88" width="22.5" height="192" class="slice"/>
+    <rect x="225" y="106" width="22.5" height="174" class="slice"/>
+    <rect x="247.5" y="128" width="22.5" height="152" class="slice"/>
+    <rect x="270" y="154" width="22.5" height="126" class="slice"/>
+    <rect x="292.5" y="184" width="22.5" height="96" class="slice"/>
+    <rect x="315" y="216" width="22.5" height="64" class="slice"/>
+    <rect x="337.5" y="252" width="22.5" height="28" class="slice"/>
+
+    <path d="M0 280 C50 150, 110 55, 180 40 C250 55, 310 150, 360 280" class="curve"/>
+    <text x="58" y="334" class="small">Riemann：把同一块阴影面积切成竖条</text>
+  </g>
+
+  <!-- Right panel -->
+  <g transform="translate(620 82)">
+    <line x1="0" y1="280" x2="360" y2="280" class="axis"/>
+    <line x1="180" y1="280" x2="180" y2="20" class="axis"/>
+    <text x="374" y="285" class="label">x</text>
+    <text x="190" y="14" class="label">y</text>
+    <text x="-12" y="306" class="small">-1</text>
+    <text x="172" y="306" class="small">0</text>
+    <text x="354" y="306" class="small">1</text>
+    <text x="190" y="284" class="small">0</text>
+    <text x="190" y="42" class="small">1</text>
+
+    <line x1="0" y1="40" x2="360" y2="40" class="grid"/>
+    <line x1="0" y1="160" x2="360" y2="160" class="grid"/>
+
+    <path d="M0 280 C50 150, 110 55, 180 40 C250 55, 310 150, 360 280 L0 280 Z" class="area"/>
+    <!-- Lebesgue horizontal layers: width decreases as height rises -->
+    <rect x="22" y="250" width="316" height="30" class="layer"/>
+    <rect x="42" y="220" width="276" height="30" class="layer"/>
+    <rect x="60" y="190" width="240" height="30" class="layer"/>
+    <rect x="78" y="160" width="204" height="30" class="layer"/>
+    <rect x="96" y="130" width="168" height="30" class="layer"/>
+    <rect x="116" y="100" width="128" height="30" class="layer"/>
+    <rect x="140" y="70" width="80" height="30" class="layer"/>
+    <rect x="166" y="40" width="28" height="30" class="layer"/>
+    <path d="M0 280 C50 150, 110 55, 180 40 C250 55, 310 150, 360 280" class="curve"/>
+
+    <line x1="22" y1="250" x2="338" y2="250" stroke="#c26a1b" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <line x1="60" y1="190" x2="300" y2="190" stroke="#c26a1b" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <line x1="96" y1="130" x2="264" y2="130" stroke="#c26a1b" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <line x1="140" y1="70" x2="220" y2="70" stroke="#c26a1b" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <text x="52" y="334" class="small">Lebesgue：把同一块阴影面积切成横条</text>
+  </g>
+
+  <rect x="287" y="436" width="506" height="38" class="note"/>
+  <text x="318" y="461" class="label">竖条总面积 = 横条总面积 = 曲线下面积</text>
+</svg>
