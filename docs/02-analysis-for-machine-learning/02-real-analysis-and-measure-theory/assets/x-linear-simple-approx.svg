@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420" role="img" aria-labelledby="title desc">
+  <title id="title">f(x)=x 的下方简单函数近似</title>
+  <desc id="desc">示意在 0 到 1 上用左端点阶梯函数从下方近似 f(x)=x。</desc>
+  <rect width="860" height="420" fill="#fbfaf7"/>
+  <g transform="translate(124 48)">
+    <line x1="0" y1="300" x2="620" y2="300" stroke="#1f2937" stroke-width="2"/>
+    <line x1="0" y1="300" x2="0" y2="38" stroke="#1f2937" stroke-width="2"/>
+    <text x="590" y="328" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="16" fill="#374151">自变量 x</text>
+    <text x="18" y="34" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="16" fill="#374151">函数值</text>
+    <text x="0" y="328" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="15" fill="#374151">0</text>
+    <text x="620" y="328" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="15" fill="#374151">1</text>
+    <text x="-12" y="304" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="15" fill="#374151">0</text>
+    <text x="-12" y="48" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="15" fill="#374151">1</text>
+
+    <path d="M0,300 L620,40" stroke="#7c3aed" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="500" y="82" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="16" fill="#7c3aed">f(x)=x</text>
+
+    <g fill="#dbeafe" stroke="#2563eb" stroke-width="2" opacity="0.78">
+      <rect x="0" y="300" width="155" height="0"/>
+      <rect x="155" y="235" width="155" height="65"/>
+      <rect x="310" y="170" width="155" height="130"/>
+      <rect x="465" y="105" width="155" height="195"/>
+    </g>
+    <polyline points="0,300 155,300 155,235 310,235 310,170 465,170 465,105 620,105" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="318" y="360" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="16" fill="#1f2937">n=4 时，每段取左端点高度，从下方近似</text>
+    <text x="82" y="318" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="13" fill="#374151">[0,1/4)</text>
+    <text x="237" y="222" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="13" fill="#374151">高度 1/4</text>
+    <text x="392" y="157" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="13" fill="#374151">高度 1/2</text>
+    <text x="547" y="92" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial, sans-serif" font-size="13" fill="#374151">高度 3/4</text>
+  </g>
+</svg>
