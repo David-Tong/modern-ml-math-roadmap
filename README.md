@@ -1,4 +1,4 @@
-# Modern ML Math Roadmap
+﻿# Modern ML Math Roadmap
 
 这个仓库用于组织一套面向工科背景读者的现代机器学习理论数学导读。它不是严格数学教材，而是一张路线图：帮助读者在读机器学习理论、模型结构或论文时，判断自己需要补哪一类数学语言。
 
@@ -11,7 +11,7 @@
 ## 文档结构
 
 - [docs/01-alegbra-for-machine-learning/](docs/01-alegbra-for-machine-learning/)：抽象代数、矩阵理论和矩阵分析。
-- [docs/02-analysis-for-machine-learning/](docs/02-analysis-for-machine-learning/)：实变函数与测度论、最优化、泛函分析、凸分析、变分法、偏微分方程和动力系统。
+- [docs/02-analysis-for-machine-learning/](docs/02-analysis-for-machine-learning/)：实变函数与测度论、最优化理论和变分法、泛函分析、偏微分方程和动力系统。
 - [docs/03-geometry-for-machine-learning/](docs/03-geometry-for-machine-learning/)：基础拓扑、微分几何、代数拓扑、微分拓扑、信息几何和最优传输。
 - [docs/04-supplementary-for-machine-leanring/](docs/04-supplementary-for-machine-leanring/)：离散结构、对称性和特定理论方向里的专题工具。
 
@@ -30,3 +30,4 @@
 ## 发布方式
 
 `docs/` 是主要文档入口。之后如果使用 GitHub Pages、静态文档站点或其他发布方式，应以 `docs/` 作为文档根目录。
+
