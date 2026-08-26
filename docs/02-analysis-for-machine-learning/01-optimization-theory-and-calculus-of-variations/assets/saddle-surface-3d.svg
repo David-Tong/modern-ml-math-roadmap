@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Three dimensional saddle surface</title>
+  <desc id="desc">A stylized three dimensional plot of f(x,y)=x squared minus y squared. The origin is a saddle point.</desc>
+  <rect width="760" height="500" fill="#ffffff"/>
+  <defs>
+    <linearGradient id="surfaceGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#bfdbfe"/>
+      <stop offset="0.48" stop-color="#eff6ff"/>
+      <stop offset="1" stop-color="#fecaca"/>
+    </linearGradient>
+    <marker id="axisArrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <text x="380" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#111">
+    鞍点的三维直觉：f(x,y)=x²-y²
+  </text>
+  <text x="380" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#555">
+    一个方向向上弯，垂直方向向下弯
+  </text>
+
+  <!-- Axes -->
+  <line x1="382" y1="252" x2="645" y2="338" stroke="#444" stroke-width="1.7" marker-end="url(#axisArrow)"/>
+  <line x1="382" y1="252" x2="148" y2="348" stroke="#444" stroke-width="1.7" marker-end="url(#axisArrow)"/>
+  <line x1="382" y1="252" x2="382" y2="98" stroke="#444" stroke-width="1.7" marker-end="url(#axisArrow)"/>
+  <text x="654" y="346" font-family="Arial, sans-serif" font-size="15" fill="#444">x</text>
+  <text x="128" y="360" font-family="Arial, sans-serif" font-size="15" fill="#444">y</text>
+  <text x="390" y="96" font-family="Arial, sans-serif" font-size="15" fill="#444">f</text>
+
+  <!-- Stylized saddle surface -->
+  <path d="M 130 220
+           C 210 125, 292 118, 382 212
+           C 472 306, 550 316, 633 220
+           L 633 306
+           C 550 395, 472 386, 382 292
+           C 292 198, 210 205, 130 306
+           Z"
+        fill="url(#surfaceGrad)" stroke="#64748b" stroke-width="1.4" opacity="0.94"/>
+
+  <!-- Mesh curves: x-direction, upward bowl -->
+  <path d="M 142 232 C 220 157, 300 154, 382 222 C 464 290, 542 295, 622 232" fill="none" stroke="#2563eb" stroke-width="2.2"/>
+  <path d="M 135 270 C 216 186, 298 184, 382 252 C 466 320, 546 322, 628 270" fill="none" stroke="#2563eb" stroke-width="1.4" opacity="0.7"/>
+  <path d="M 142 304 C 221 227, 300 224, 382 282 C 464 340, 542 345, 622 304" fill="none" stroke="#2563eb" stroke-width="1.4" opacity="0.7"/>
+
+  <!-- Mesh curves: y-direction, downward cap -->
+  <path d="M 214 194 C 256 252, 305 278, 382 252 C 459 226, 505 250, 548 194" fill="none" stroke="#dc2626" stroke-width="2.2"/>
+  <path d="M 266 164 C 296 230, 329 262, 382 252 C 435 242, 466 230, 496 164" fill="none" stroke="#dc2626" stroke-width="1.4" opacity="0.75"/>
+  <path d="M 174 264 C 230 310, 292 326, 382 292 C 472 258, 530 306, 586 264" fill="none" stroke="#dc2626" stroke-width="1.4" opacity="0.75"/>
+
+  <!-- Saddle point -->
+  <circle cx="382" cy="252" r="7" fill="#111"/>
+  <text x="394" y="247" font-family="Arial, sans-serif" font-size="15" fill="#111">鞍点</text>
+
+  <!-- Direction labels -->
+  <rect x="78" y="395" width="604" height="62" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <line x1="104" y1="418" x2="164" y2="418" stroke="#2563eb" stroke-width="3"/>
+  <text x="176" y="423" font-family="Arial, sans-serif" font-size="15" fill="#334155">沿一个方向像碗底：离开原点函数值变大</text>
+  <line x1="104" y1="442" x2="164" y2="442" stroke="#dc2626" stroke-width="3"/>
+  <text x="176" y="447" font-family="Arial, sans-serif" font-size="15" fill="#334155">沿另一个方向像山顶：离开原点函数值变小</text>
+</svg>
