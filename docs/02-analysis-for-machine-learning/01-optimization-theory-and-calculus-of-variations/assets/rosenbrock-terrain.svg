@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="500" viewBox="0 0 780 500" role="img" aria-labelledby="title desc">
+  <title id="title">Rosenbrock function terrain</title>
+  <desc id="desc">A perspective terrain-style diagram of the Rosenbrock function showing a high curved landscape, a narrow banana-shaped valley, and the minimum at the end of the valley.</desc>
+  <rect width="780" height="500" fill="#ffffff"/>
+
+  <defs>
+    <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ef4444"/>
+      <stop offset="0.35" stop-color="#f59e0b"/>
+      <stop offset="0.68" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+    <linearGradient id="valley" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 21px; fill: #111827; font-weight: 600; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #52525b; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111827; font-weight: 600; }
+      .note { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
+      .grid { fill: none; stroke: rgba(82,82,91,0.28); stroke-width: 1.1; }
+      .ridge { fill: none; stroke: rgba(127,29,29,0.38); stroke-width: 1.2; }
+      .valley-line { fill: none; stroke: #1d4ed8; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 9 7; }
+      .path { fill: none; stroke: #111827; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow-blue); }
+    </style>
+  </defs>
+
+  <text x="390" y="34" text-anchor="middle" class="title">Rosenbrock 函数的“香蕉谷”地形</text>
+  <text x="390" y="61" text-anchor="middle" class="subtitle">真正困难的是狭长、弯曲、两侧很陡的谷地，而不是公式本身</text>
+
+  <g transform="translate(40,78)">
+    <path d="M 66 302
+             C 125 220, 199 153, 295 122
+             C 407 86, 529 91, 674 118
+             L 612 360
+             C 469 322, 348 318, 236 351
+             C 161 372, 103 354, 66 302 Z"
+          fill="url(#terrain)" opacity="0.95"/>
+
+    <path d="M 96 292
+             C 151 241, 217 205, 292 191
+             C 378 175, 455 186, 563 219
+             C 491 239, 430 263, 379 292
+             C 318 326, 247 338, 178 325
+             C 140 318, 113 307, 96 292 Z"
+          fill="url(#valley)" opacity="0.96"/>
+
+    <path d="M 90 282 C 162 199, 259 147, 381 135 C 478 126, 566 139, 660 164" class="ridge"/>
+    <path d="M 84 315 C 165 257, 253 219, 357 210 C 456 202, 548 219, 634 258" class="grid"/>
+    <path d="M 131 340 C 206 292, 285 263, 378 261 C 467 259, 543 282, 608 323" class="grid"/>
+
+    <path d="M 141 224 C 177 256, 203 296, 216 343" class="grid"/>
+    <path d="M 216 164 C 250 210, 267 270, 266 350" class="grid"/>
+    <path d="M 305 122 C 330 184, 337 253, 326 343" class="grid"/>
+    <path d="M 404 96 C 413 164, 406 241, 383 331" class="grid"/>
+    <path d="M 511 97 C 500 169, 473 252, 430 346" class="grid"/>
+    <path d="M 620 111 C 589 189, 546 276, 490 362" class="grid"/>
+
+    <path d="M 97 292
+             C 165 274, 231 251, 293 226
+             C 352 203, 399 201, 442 219
+             C 490 239, 529 244, 565 219"
+          class="valley-line"/>
+
+    <path d="M 112 122
+             L 262 291
+             L 231 213
+             L 364 278
+             L 331 229
+             L 448 243
+             L 565 219"
+          class="path"/>
+
+    <circle cx="112" cy="122" r="5" fill="#111827"/>
+    <text x="103" y="106" text-anchor="middle" class="label">起点</text>
+
+    <circle cx="565" cy="219" r="7" fill="#dc2626"/>
+    <text x="578" y="212" class="label">极小点 (1,1)</text>
+
+    <text x="103" y="384" class="note">蓝色低地：狭长弯曲谷底</text>
+    <text x="486" y="76" class="note">红橙高地：两侧坡很陡</text>
+    <text x="414" y="384" class="note">黑色折线：固定方向试探时容易绕弯、撞谷壁</text>
+
+    <line x1="92" y1="396" x2="244" y2="396" stroke="#93c5fd" stroke-width="9" stroke-linecap="round"/>
+    <text x="258" y="400" class="note">低函数值</text>
+    <line x1="360" y1="396" x2="512" y2="396" stroke="#ef4444" stroke-width="9" stroke-linecap="round"/>
+    <text x="526" y="400" class="note">高函数值</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Gradient descent and conjugate gradient search paths</title>
+  <desc id="desc">A comparison of search paths on elongated contour lines. Gradient descent zigzags across the valley while conjugate gradient follows coordinated directions toward the minimum.</desc>
+  <rect width="760" height="430" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow-gd" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-cg" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#dc2626"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 21px; fill: #111827; font-weight: 600; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #52525b; }
+      .label { font-family: Arial, sans-serif; font-size: 15px; fill: #111827; font-weight: 600; }
+      .note { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
+      .contour { fill: none; stroke: #d4d4d8; stroke-width: 1.4; }
+      .axis { stroke: #e4e4e7; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <text x="380" y="34" text-anchor="middle" class="title">普通梯度下降法与共轭梯度法的搜索路径</text>
+  <text x="380" y="60" text-anchor="middle" class="subtitle">同一个狭长二次型等高线中，搜索方向的设计会明显改变前进方式</text>
+
+  <line x1="380" y1="86" x2="380" y2="392" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <text x="190" y="96" text-anchor="middle" class="label">普通梯度下降法</text>
+  <text x="570" y="96" text-anchor="middle" class="label">共轭梯度法</text>
+
+  <g transform="translate(0,0)">
+    <line x1="62" y1="250" x2="318" y2="250" class="axis"/>
+    <line x1="190" y1="132" x2="190" y2="368" class="axis"/>
+
+    <ellipse cx="190" cy="250" rx="44" ry="14" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="78" ry="26" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="113" ry="38" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="148" ry="50" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="182" ry="62" transform="rotate(-25 190 250)" class="contour"/>
+
+    <path d="M 80 142
+             L 287 190
+             L 104 232
+             L 259 255
+             L 132 274
+             L 225 283
+             L 168 270
+             L 198 258"
+          fill="none" stroke="#2563eb" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"
+          marker-mid="url(#arrow-gd)" marker-end="url(#arrow-gd)"/>
+
+    <circle cx="80" cy="142" r="4.5" fill="#2563eb"/>
+    <circle cx="190" cy="250" r="5" fill="#111827"/>
+    <text x="72" y="128" text-anchor="middle" class="note">起点</text>
+    <text x="190" y="237" text-anchor="middle" class="note">极小点</text>
+    <text x="190" y="382" text-anchor="middle" class="note">每一步都重新看最陡方向，容易左右折返</text>
+  </g>
+
+  <g transform="translate(380,0)">
+    <line x1="62" y1="250" x2="318" y2="250" class="axis"/>
+    <line x1="190" y1="132" x2="190" y2="368" class="axis"/>
+
+    <ellipse cx="190" cy="250" rx="44" ry="14" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="78" ry="26" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="113" ry="38" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="148" ry="50" transform="rotate(-25 190 250)" class="contour"/>
+    <ellipse cx="190" cy="250" rx="182" ry="62" transform="rotate(-25 190 250)" class="contour"/>
+
+    <path d="M 80 142
+             L 245 220
+             L 190 250"
+          fill="none" stroke="#dc2626" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"
+          marker-mid="url(#arrow-cg)" marker-end="url(#arrow-cg)"/>
+
+    <circle cx="80" cy="142" r="4.5" fill="#dc2626"/>
+    <circle cx="190" cy="250" r="5" fill="#111827"/>
+    <text x="72" y="128" text-anchor="middle" class="note">起点</text>
+    <text x="190" y="237" text-anchor="middle" class="note">极小点</text>
+    <text x="190" y="382" text-anchor="middle" class="note">方向彼此协调，尽量不抵消前一步进展</text>
+  </g>
+</svg>

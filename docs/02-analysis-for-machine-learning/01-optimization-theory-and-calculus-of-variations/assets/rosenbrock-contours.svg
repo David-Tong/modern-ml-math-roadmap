@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460" role="img" aria-labelledby="title desc">
+  <title id="title">Rosenbrock function contours</title>
+  <desc id="desc">Contour lines of the Rosenbrock function showing a narrow curved valley leading to the minimum at (1, 1).</desc>
+  <rect width="760" height="460" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 21px; fill: #111827; font-weight: 600; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #52525b; }
+      .axis { stroke: #d4d4d8; stroke-width: 1.2; }
+      .tick { stroke: #d4d4d8; stroke-width: 1; }
+      .tick-label { font-family: Arial, sans-serif; font-size: 12px; fill: #52525b; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111827; font-weight: 600; }
+      .note { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
+      .contour { fill: none; stroke: #a1a1aa; stroke-width: 1.4; }
+      .contour-light { fill: none; stroke: #d4d4d8; stroke-width: 1.2; }
+      .valley { fill: none; stroke: #f59e0b; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 8 7; }
+      .path { fill: none; stroke: #2563eb; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <text x="380" y="34" text-anchor="middle" class="title">Rosenbrock 函数的狭长弯曲谷</text>
+  <text x="380" y="61" text-anchor="middle" class="subtitle">等高线不是圆形碗底，而是沿 y=x² 弯曲的窄谷</text>
+
+  <g transform="translate(88,82)">
+    <rect x="0" y="0" width="590" height="320" fill="#ffffff" stroke="#e4e4e7" stroke-width="1.2"/>
+
+    <line x1="0" y1="213" x2="590" y2="213" class="axis"/>
+    <line x1="236" y1="0" x2="236" y2="320" class="axis"/>
+
+    <g class="ticks">
+      <line x1="59" y1="213" x2="59" y2="219" class="tick"/>
+      <text x="59" y="237" text-anchor="middle" class="tick-label">-1.5</text>
+      <line x1="236" y1="213" x2="236" y2="219" class="tick"/>
+      <text x="236" y="237" text-anchor="middle" class="tick-label">0</text>
+      <line x1="354" y1="213" x2="354" y2="219" class="tick"/>
+      <text x="354" y="237" text-anchor="middle" class="tick-label">1</text>
+      <line x1="472" y1="213" x2="472" y2="219" class="tick"/>
+      <text x="472" y="237" text-anchor="middle" class="tick-label">2</text>
+
+      <line x1="230" y1="53" x2="236" y2="53" class="tick"/>
+      <text x="221" y="57" text-anchor="end" class="tick-label">3</text>
+      <line x1="230" y1="160" x2="236" y2="160" class="tick"/>
+      <text x="221" y="164" text-anchor="end" class="tick-label">1</text>
+      <line x1="230" y1="267" x2="236" y2="267" class="tick"/>
+      <text x="221" y="271" text-anchor="end" class="tick-label">-1</text>
+    </g>
+
+    <text x="585" y="205" text-anchor="end" class="tick-label">x</text>
+    <text x="247" y="14" class="tick-label">y</text>
+
+    <path d="M 6 12 C 95 25, 165 63, 210 111 C 246 151, 281 177, 336 161 C 394 145, 440 120, 575 112" class="contour-light"/>
+    <path d="M 10 42 C 82 54, 155 88, 208 128 C 247 158, 283 175, 329 162 C 381 147, 435 128, 566 129" class="contour"/>
+    <path d="M 20 78 C 91 88, 154 113, 211 143 C 249 163, 283 172, 322 163 C 368 152, 429 143, 556 150" class="contour"/>
+    <path d="M 31 116 C 99 122, 160 137, 215 154 C 251 165, 282 169, 317 164 C 360 158, 419 161, 543 174" class="contour"/>
+    <path d="M 45 153 C 110 154, 168 157, 218 163 C 252 168, 282 168, 313 164 C 352 161, 411 179, 529 204" class="contour"/>
+    <path d="M 64 190 C 125 184, 178 176, 223 168 C 253 164, 282 166, 311 164 C 347 164, 398 199, 511 239" class="contour"/>
+    <path d="M 88 226 C 141 208, 191 185, 228 171 C 255 161, 284 164, 310 164 C 342 166, 388 220, 490 276" class="contour"/>
+    <path d="M 123 260 C 162 229, 202 193, 234 172 C 259 156, 287 161, 310 164 C 339 168, 378 241, 462 306" class="contour-light"/>
+
+    <path d="M 58 213 C 118 208, 177 192, 236 213 C 278 228, 319 195, 354 160 C 409 105, 456 32, 472 0" class="valley"/>
+
+    <path d="M 84 84 L 268 224 L 239 154 L 329 191 L 306 151 L 356 160" class="path"/>
+
+    <circle cx="354" cy="160" r="6" fill="#dc2626"/>
+    <text x="366" y="151" class="label">(1,1)</text>
+    <text x="78" y="72" text-anchor="middle" class="note">起点</text>
+    <text x="462" y="28" class="note">谷底大致沿 y=x² 弯曲</text>
+  </g>
+
+  <text x="380" y="433" text-anchor="middle" class="note">
+    固定方向试探容易撞到谷壁；好的搜索方向需要顺着弯曲谷底逐步调整
+  </text>
+</svg>
