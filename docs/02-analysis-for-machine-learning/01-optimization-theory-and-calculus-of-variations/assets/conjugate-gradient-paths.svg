@@ -16,12 +16,12 @@
       .label { font-family: Arial, sans-serif; font-size: 15px; fill: #111827; font-weight: 600; }
       .note { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
       .contour { fill: none; stroke: #d4d4d8; stroke-width: 1.4; }
-      .axis { stroke: #e4e4e7; stroke-width: 1; }
+      .guide { stroke: #e4e4e7; stroke-width: 1; stroke-dasharray: 4 5; }
     </style>
   </defs>
 
   <text x="380" y="34" text-anchor="middle" class="title">普通梯度下降法与共轭梯度法的搜索路径</text>
-  <text x="380" y="60" text-anchor="middle" class="subtitle">同一个狭长二次型等高线中，搜索方向的设计会明显改变前进方式</text>
+  <text x="380" y="60" text-anchor="middle" class="subtitle">路径为示意图：重点比较折返方式，不表示精确坐标迭代结果</text>
 
   <line x1="380" y1="86" x2="380" y2="392" stroke="#e5e7eb" stroke-width="1.5"/>
 
@@ -29,8 +29,8 @@
   <text x="570" y="96" text-anchor="middle" class="label">共轭梯度法</text>
 
   <g transform="translate(0,0)">
-    <line x1="62" y1="250" x2="318" y2="250" class="axis"/>
-    <line x1="190" y1="132" x2="190" y2="368" class="axis"/>
+    <line x1="62" y1="250" x2="318" y2="250" class="guide"/>
+    <line x1="190" y1="132" x2="190" y2="368" class="guide"/>
 
     <ellipse cx="190" cy="250" rx="44" ry="14" transform="rotate(-25 190 250)" class="contour"/>
     <ellipse cx="190" cy="250" rx="78" ry="26" transform="rotate(-25 190 250)" class="contour"/>
@@ -57,8 +57,8 @@
   </g>
 
   <g transform="translate(380,0)">
-    <line x1="62" y1="250" x2="318" y2="250" class="axis"/>
-    <line x1="190" y1="132" x2="190" y2="368" class="axis"/>
+    <line x1="62" y1="250" x2="318" y2="250" class="guide"/>
+    <line x1="190" y1="132" x2="190" y2="368" class="guide"/>
 
     <ellipse cx="190" cy="250" rx="44" ry="14" transform="rotate(-25 190 250)" class="contour"/>
     <ellipse cx="190" cy="250" rx="78" ry="26" transform="rotate(-25 190 250)" class="contour"/>

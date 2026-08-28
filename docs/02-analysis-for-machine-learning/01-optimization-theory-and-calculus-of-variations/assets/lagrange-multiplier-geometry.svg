@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="520" viewBox="0 0 780 520" role="img" aria-labelledby="title desc">
+  <title id="title">Lagrange multiplier example with correct coordinates</title>
+  <desc id="desc">A coordinate plot for minimizing f(x,y)=x^2+y^2 subject to x+y=10. The line is tangent to the circle x^2+y^2=50 at (5,5).</desc>
+  <rect width="780" height="520" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#52525b"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/>
+    </marker>
+    <clipPath id="plot-clip">
+      <rect x="64" y="54" width="432" height="382"/>
+    </clipPath>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 21px; fill: #111827; font-weight: 600; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #52525b; }
+      .axis { stroke: #52525b; stroke-width: 1.4; marker-end: url(#arrow-axis); }
+      .grid { stroke: #e4e4e7; stroke-width: 1; }
+      .tick { stroke: #71717a; stroke-width: 1.2; }
+      .circle { fill: none; stroke: #a1a1aa; stroke-width: 1.4; }
+      .circle-best { fill: rgba(37,99,235,0.08); stroke: #2563eb; stroke-width: 2.6; }
+      .constraint { stroke: #111827; stroke-width: 3; }
+      .radius { stroke: #dc2626; stroke-width: 3; marker-end: url(#arrow-red); }
+      .normal { stroke: #2563eb; stroke-width: 3; marker-end: url(#arrow-blue); }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111827; }
+      .label-strong { font-family: Arial, sans-serif; font-size: 15px; fill: #111827; font-weight: 600; }
+      .label-muted { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
+      .label-blue { font-family: Arial, sans-serif; font-size: 14px; fill: #2563eb; font-weight: 600; }
+      .label-red { font-family: Arial, sans-serif; font-size: 14px; fill: #dc2626; font-weight: 600; }
+    </style>
+  </defs>
+
+  <text x="390" y="34" text-anchor="middle" class="title">拉格朗日乘子法：直线上离原点最近的点</text>
+  <text x="390" y="61" text-anchor="middle" class="subtitle">按同一坐标比例绘制：X=80+30x，Y=420-30y</text>
+
+  <g>
+    <rect x="64" y="54" width="432" height="382" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+
+    <g>
+      <line x1="80" y1="420" x2="470" y2="420" class="axis"/>
+      <line x1="80" y1="420" x2="80" y2="70" class="axis"/>
+
+      <line x1="170" y1="70" x2="170" y2="420" class="grid"/>
+      <line x1="230" y1="70" x2="230" y2="420" class="grid"/>
+      <line x1="320" y1="70" x2="320" y2="420" class="grid"/>
+      <line x1="380" y1="70" x2="380" y2="420" class="grid"/>
+      <line x1="80" y1="330" x2="470" y2="330" class="grid"/>
+      <line x1="80" y1="270" x2="470" y2="270" class="grid"/>
+      <line x1="80" y1="180" x2="470" y2="180" class="grid"/>
+      <line x1="80" y1="120" x2="470" y2="120" class="grid"/>
+
+      <line x1="170" y1="420" x2="170" y2="426" class="tick"/>
+      <line x1="230" y1="420" x2="230" y2="426" class="tick"/>
+      <line x1="320" y1="420" x2="320" y2="426" class="tick"/>
+      <line x1="380" y1="420" x2="380" y2="426" class="tick"/>
+      <line x1="74" y1="330" x2="80" y2="330" class="tick"/>
+      <line x1="74" y1="270" x2="80" y2="270" class="tick"/>
+      <line x1="74" y1="180" x2="80" y2="180" class="tick"/>
+      <line x1="74" y1="120" x2="80" y2="120" class="tick"/>
+
+      <text x="80" y="444" text-anchor="middle" class="label-muted">0</text>
+      <text x="170" y="444" text-anchor="middle" class="label-muted">3</text>
+      <text x="230" y="444" text-anchor="middle" class="label-muted">5</text>
+      <text x="320" y="444" text-anchor="middle" class="label-muted">8</text>
+      <text x="380" y="444" text-anchor="middle" class="label-muted">10</text>
+      <text x="55" y="334" text-anchor="middle" class="label-muted">3</text>
+      <text x="55" y="274" text-anchor="middle" class="label-muted">5</text>
+      <text x="55" y="184" text-anchor="middle" class="label-muted">8</text>
+      <text x="55" y="124" text-anchor="middle" class="label-muted">10</text>
+      <text x="474" y="414" class="label-muted">x</text>
+      <text x="90" y="76" class="label-muted">y</text>
+    </g>
+
+    <g clip-path="url(#plot-clip)">
+      <circle cx="80" cy="420" r="169.71" class="circle"/>
+      <circle cx="80" cy="420" r="212.13" class="circle-best"/>
+      <circle cx="80" cy="420" r="216.33" class="circle"/>
+      <circle cx="80" cy="420" r="254.56" class="circle"/>
+      <circle cx="80" cy="420" r="300" class="circle"/>
+      <line x1="80" y1="120" x2="380" y2="420" class="constraint"/>
+      <line x1="80" y1="420" x2="230" y2="270" class="radius"/>
+      <line x1="230" y1="270" x2="292" y2="208" class="normal"/>
+    </g>
+
+    <text x="308" y="210" class="label-blue">∇f 与 ∇h 平行</text>
+    <text x="286" y="338" class="label-strong">x+y=10</text>
+    <text x="112" y="253" class="label-blue">x²+y²=50</text>
+    <text x="132" y="360" class="label-red">从原点到直线的最短半径</text>
+
+    <circle cx="230" cy="270" r="6.5" fill="#dc2626"/>
+    <text x="242" y="264" class="label-strong">(5,5)</text>
+    <text x="242" y="283" class="label-muted">第一次相切，f=50</text>
+
+    <circle cx="200" cy="240" r="5" fill="#111827"/>
+    <text x="126" y="235" class="label">(4,6), f=52</text>
+    <circle cx="260" cy="300" r="5" fill="#111827"/>
+    <text x="272" y="318" class="label">(6,4), f=52</text>
+  </g>
+
+  <g transform="translate(530,118)">
+    <text x="0" y="0" class="label-strong">这张图在说什么</text>
+    <text x="0" y="34" class="label-muted">约束线：</text>
+    <text x="82" y="34" class="label">x+y=10</text>
+    <text x="0" y="68" class="label-muted">最优点：</text>
+    <text x="82" y="68" class="label">(5,5)</text>
+    <text x="0" y="102" class="label-muted">函数值：</text>
+    <text x="82" y="102" class="label">5²+5²=50</text>
+    <text x="0" y="136" class="label-muted">其它可行点：</text>
+    <text x="0" y="160" class="label">(4,6)、(6,4)</text>
+    <text x="0" y="184" class="label-muted">也在直线上，但 f=52</text>
+    <text x="0" y="230" class="label-muted">半径更小的圆碰不到直线；</text>
+    <text x="0" y="254" class="label-muted">半径更大的圆会相交，</text>
+    <text x="0" y="278" class="label-muted">但函数值更大。</text>
+  </g>
+</svg>
