@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="520" viewBox="0 0 780 520" role="img" aria-labelledby="title desc">
+  <title id="title">Dual function example</title>
+  <desc id="desc">A plot in multiplier space showing a concave quadratic dual function q of lambda and nu. The maximum occurs at lambda equals one point two and nu equals negative zero point four, with value zero point six eight.</desc>
+  <rect width="780" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#52525b"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 21px; fill: #111827; font-weight: 700; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #52525b; }
+      .axis { stroke: #52525b; stroke-width: 1.4; marker-end: url(#arrow-axis); }
+      .grid { stroke: #e5e7eb; stroke-width: 1; }
+      .domain { fill: #ecfdf5; opacity: 0.55; }
+      .boundary { stroke: #16a34a; stroke-width: 2.2; stroke-dasharray: 7 6; }
+      .contour { fill: none; stroke: #f97316; stroke-width: 1.5; opacity: 0.7; }
+      .contour-high { fill: rgba(37,99,235,0.08); stroke: #2563eb; stroke-width: 2.8; }
+      .ridge { stroke: #7c3aed; stroke-width: 2.4; stroke-dasharray: 8 6; }
+      .point { fill: #2563eb; stroke: #ffffff; stroke-width: 2; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111827; }
+      .label-muted { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
+      .label-blue { font-family: Arial, sans-serif; font-size: 14px; fill: #2563eb; font-weight: 700; }
+      .label-green { font-family: Arial, sans-serif; font-size: 14px; fill: #16a34a; font-weight: 700; }
+    </style>
+  </defs>
+
+  <text x="390" y="34" text-anchor="middle" class="title">对偶问题：在乘子空间里找最高下界</text>
+  <text x="390" y="60" text-anchor="middle" class="subtitle">每个点 (lambda, nu) 都给原问题最优值一个下界；对偶问题把这个下界尽量抬高</text>
+
+  <g transform="translate(70,72)">
+    <rect x="0" y="0" width="460" height="400" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+    <rect x="20" y="0" width="440" height="400" class="domain"/>
+
+    <!-- Coordinates: X = 20 + 170 lambda, Y = 102 + 170(0.6 - nu). -->
+    <line x1="20" y1="202" x2="430" y2="202" class="axis"/>
+    <line x1="20" y1="370" x2="20" y2="38" class="axis"/>
+    <text x="435" y="207" class="label-muted">lambda</text>
+    <text x="4" y="31" class="label-muted">nu</text>
+
+    <line x1="190" y1="54" x2="190" y2="370" class="grid"/>
+    <line x1="360" y1="54" x2="360" y2="370" class="grid"/>
+    <line x1="20" y1="117" x2="430" y2="117" class="grid"/>
+    <line x1="20" y1="287" x2="430" y2="287" class="grid"/>
+    <line x1="20" y1="372" x2="430" y2="372" class="grid"/>
+    <text x="184" y="220" class="label-muted">1</text>
+    <text x="354" y="220" class="label-muted">2</text>
+    <text x="30" y="122" class="label-muted">0.5</text>
+    <text x="30" y="292" class="label-muted">-0.5</text>
+    <text x="30" y="377" class="label-muted">-1</text>
+
+    <line x1="20" y1="42" x2="20" y2="370" class="boundary"/>
+    <text x="34" y="64" class="label-green">lambda >= 0</text>
+
+    <ellipse cx="224" cy="272" rx="52" ry="30" transform="rotate(-28 224 272)" class="contour-high"/>
+    <ellipse cx="224" cy="272" rx="92" ry="52" transform="rotate(-28 224 272)" class="contour"/>
+    <ellipse cx="224" cy="272" rx="134" ry="76" transform="rotate(-28 224 272)" class="contour"/>
+    <ellipse cx="224" cy="272" rx="178" ry="100" transform="rotate(-28 224 272)" class="contour"/>
+    <line x1="108" y1="338" x2="344" y2="206" class="ridge"/>
+    <text x="326" y="194" class="label-muted">q(lambda,nu) 的等高线</text>
+
+    <circle cx="224" cy="272" r="7.5" class="point"/>
+    <text x="236" y="266" class="label-blue">(lambda*,nu*)=(1.2,-0.4)</text>
+    <text x="236" y="286" class="label-blue">q*=0.68</text>
+  </g>
+
+  <g transform="translate(560,126)">
+    <rect x="0" y="0" width="164" height="238" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+    <text x="14" y="30" class="label-blue">怎么读这张图</text>
+    <text x="14" y="62" class="label-muted">lambda 必须非负，</text>
+    <text x="14" y="82" class="label-muted">nu 可以任意取。</text>
+    <text x="14" y="116" class="label-muted">q 是一个向下开的</text>
+    <text x="14" y="136" class="label-muted">二次函数。</text>
+    <text x="14" y="170" class="label-muted">蓝点是最高下界，</text>
+    <text x="14" y="190" class="label-muted">它和原问题最优值</text>
+    <text x="14" y="210" class="label-muted">在这里相等。</text>
+  </g>
+</svg>

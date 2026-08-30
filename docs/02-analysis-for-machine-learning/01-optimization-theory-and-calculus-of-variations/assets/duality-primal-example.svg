@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="520" viewBox="0 0 780 520" role="img" aria-labelledby="title desc">
+  <title id="title">Primal constrained optimization example</title>
+  <desc id="desc">A coordinate plot of minimizing x squared plus y squared subject to x plus y equals one and x at least zero point eight. The optimum is at the boundary point zero point eight comma zero point two.</desc>
+  <rect width="780" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#52525b"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 21px; fill: #111827; font-weight: 700; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 14px; fill: #52525b; }
+      .axis { stroke: #52525b; stroke-width: 1.4; marker-end: url(#arrow-axis); }
+      .grid { stroke: #e5e7eb; stroke-width: 1; }
+      .contour { fill: none; stroke: #f97316; stroke-width: 1.5; opacity: 0.75; }
+      .contour-best { fill: rgba(37,99,235,0.08); stroke: #2563eb; stroke-width: 2.8; }
+      .constraint { stroke: #111827; stroke-width: 2.8; }
+      .constraint-muted { stroke: #9ca3af; stroke-width: 2.2; stroke-dasharray: 8 6; }
+      .boundary { stroke: #dc2626; stroke-width: 2.2; stroke-dasharray: 7 6; }
+      .shade { fill: #e0f2fe; opacity: 0.45; }
+      .point { fill: #2563eb; stroke: #ffffff; stroke-width: 2; }
+      .point-muted { fill: #9ca3af; stroke: #ffffff; stroke-width: 2; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #111827; }
+      .label-muted { font-family: Arial, sans-serif; font-size: 13px; fill: #52525b; }
+      .label-blue { font-family: Arial, sans-serif; font-size: 14px; fill: #2563eb; font-weight: 700; }
+      .label-red { font-family: Arial, sans-serif; font-size: 14px; fill: #dc2626; font-weight: 700; }
+    </style>
+  </defs>
+
+  <text x="390" y="34" text-anchor="middle" class="title">原问题：在变量空间里找可行点</text>
+  <text x="390" y="60" text-anchor="middle" class="subtitle">目标函数的等高线是圆；约束把搜索限制在 x+y=1 且 x>=0.8 的那段直线上</text>
+
+  <g transform="translate(70,72)">
+    <rect x="0" y="0" width="460" height="400" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+    <rect x="250" y="0" width="210" height="400" class="shade"/>
+
+    <!-- Coordinates: X = 10 + 300x, Y = 348 - 300y. -->
+    <line x1="10" y1="348" x2="430" y2="348" class="axis"/>
+    <line x1="10" y1="390" x2="10" y2="30" class="axis"/>
+    <text x="435" y="352" class="label-muted">x</text>
+    <text x="2" y="24" class="label-muted">y</text>
+
+    <line x1="160" y1="40" x2="160" y2="390" class="grid"/>
+    <line x1="310" y1="40" x2="310" y2="390" class="grid"/>
+    <line x1="10" y1="198" x2="430" y2="198" class="grid"/>
+    <line x1="10" y1="48" x2="430" y2="48" class="grid"/>
+    <text x="154" y="367" class="label-muted">0.5</text>
+    <text x="304" y="367" class="label-muted">1.0</text>
+    <text x="18" y="203" class="label-muted">0.5</text>
+    <text x="18" y="53" class="label-muted">1.0</text>
+
+    <circle cx="10" cy="348" r="150" class="contour"/>
+    <circle cx="10" cy="348" r="210" class="contour"/>
+    <circle cx="10" cy="348" r="247.4" class="contour-best"/>
+    <circle cx="10" cy="348" r="300" class="contour"/>
+    <text x="272" y="104" class="label-muted">f(x,y)=x²+y² 的等高线</text>
+
+    <line x1="10" y1="48" x2="250" y2="288" class="constraint-muted"/>
+    <line x1="250" y1="288" x2="360" y2="398" class="constraint"/>
+    <text x="288" y="260" class="label">可行方向：x+y=1, x>=0.8</text>
+
+    <line x1="250" y1="26" x2="250" y2="390" class="boundary"/>
+    <text x="258" y="42" class="label-red">x=0.8</text>
+    <text x="268" y="68" class="label-muted">右侧满足 x>=0.8</text>
+
+    <circle cx="160" cy="198" r="6.5" class="point-muted"/>
+    <text x="82" y="184" class="label-muted">(0.5,0.5) 只满足等式</text>
+
+    <circle cx="250" cy="288" r="7.5" class="point"/>
+    <text x="258" y="309" class="label-blue">x*=(0.8,0.2)</text>
+    <text x="258" y="329" class="label-blue">p*=0.68</text>
+  </g>
+
+  <g transform="translate(560,132)">
+    <rect x="0" y="0" width="160" height="210" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+    <text x="14" y="30" class="label-blue">怎么读这张图</text>
+    <text x="14" y="62" class="label-muted">圆越靠近原点，</text>
+    <text x="14" y="82" class="label-muted">目标函数值越小。</text>
+    <text x="14" y="116" class="label-muted">可行点只能沿黑色</text>
+    <text x="14" y="136" class="label-muted">实线移动。</text>
+    <text x="14" y="170" class="label-muted">最先碰到的蓝色圆</text>
+    <text x="14" y="190" class="label-muted">给出约束最优点。</text>
+  </g>
+</svg>
