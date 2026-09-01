@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="430" viewBox="0 0 920 430" role="img" aria-labelledby="title desc">
+  <title id="title">交叉项如何改变损失地形</title>
+  <desc id="desc">左侧展示没有交叉项时的圆形等高线，右侧展示参数方向尺度差异很大时的狭长椭圆等高线，说明平缓方向和陡峭方向会影响梯度搜索。</desc>
+  <rect width="920" height="430" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow-dark" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#dc2626"/>
+    </marker>
+    <style>
+      .title { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 23px; font-weight: 700; fill: #111827; }
+      .subtitle { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 14px; fill: #475569; }
+      .panel-title { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 17px; font-weight: 700; fill: #111827; }
+      .formula { font-family: "Cambria Math", "Times New Roman", serif; font-size: 16px; fill: #1f2937; }
+      .label { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 13px; fill: #334155; }
+      .small { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 12px; fill: #64748b; }
+      .axis { stroke: #94a3b8; stroke-width: 1.3; marker-end: url(#arrow-dark); }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .contour { fill: none; stroke: #93c5fd; stroke-width: 1.6; }
+      .contour-mid { fill: none; stroke: #60a5fa; stroke-width: 1.9; }
+      .contour-strong { fill: none; stroke: #2563eb; stroke-width: 2.3; }
+      .flat { stroke: #059669; stroke-width: 3; marker-end: url(#arrow-green); }
+      .steep { stroke: #dc2626; stroke-width: 3; marker-end: url(#arrow-red); }
+      .basis { stroke: #64748b; stroke-width: 2; stroke-dasharray: 6 6; marker-end: url(#arrow-dark); }
+      .note { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.2; rx: 8; }
+      .green { fill: #059669; }
+      .red { fill: #dc2626; }
+      .blue { fill: #2563eb; }
+    </style>
+  </defs>
+
+  <text x="460" y="34" text-anchor="middle" class="title">参数关系会把圆形地形拉成狭长椭圆</text>
+  <text x="460" y="59" text-anchor="middle" class="subtitle">没有明显尺度差异时，地形接近圆；某些方向很陡、某些方向很平时，地形变成狭长谷。</text>
+
+  <g transform="translate(58,94)">
+    <text x="175" y="-8" text-anchor="middle" class="panel-title">没有交叉项：各走各的</text>
+    <text x="175" y="20" text-anchor="middle" class="formula">L(u,v) ≈ u² + v²</text>
+
+    <line x1="52" y1="190" x2="318" y2="190" class="axis"/>
+    <line x1="185" y1="323" x2="185" y2="57" class="axis"/>
+    <line x1="118" y1="57" x2="118" y2="323" class="grid"/>
+    <line x1="252" y1="57" x2="252" y2="323" class="grid"/>
+    <line x1="52" y1="123" x2="318" y2="123" class="grid"/>
+    <line x1="52" y1="257" x2="318" y2="257" class="grid"/>
+    <text x="326" y="194" class="small">u</text>
+    <text x="174" y="51" class="small">v</text>
+
+    <circle cx="185" cy="190" r="34" class="contour"/>
+    <circle cx="185" cy="190" r="62" class="contour"/>
+    <circle cx="185" cy="190" r="90" class="contour-mid"/>
+    <circle cx="185" cy="190" r="118" class="contour-strong"/>
+
+    <line x1="185" y1="190" x2="268" y2="190" class="basis"/>
+    <line x1="185" y1="190" x2="185" y2="107" class="basis"/>
+    <text x="272" y="213" class="small">只改 u</text>
+    <text x="116" y="105" class="small">只改 v</text>
+
+    <rect x="24" y="338" width="322" height="58" class="note"/>
+    <text x="185" y="360" text-anchor="middle" class="label">等高线是圆：两个方向尺度接近</text>
+    <text x="185" y="382" text-anchor="middle" class="small">沿 u 或 v 看，地形没有明显偏斜</text>
+  </g>
+
+  <g transform="translate(518,94)">
+    <text x="175" y="-8" text-anchor="middle" class="panel-title">地形狭长：搜索容易慢</text>
+    <text x="175" y="20" text-anchor="middle" class="formula">L(u,v) ≈ u² + 2ρuv + v²</text>
+
+    <line x1="52" y1="190" x2="318" y2="190" class="axis"/>
+    <line x1="185" y1="323" x2="185" y2="57" class="axis"/>
+    <line x1="118" y1="57" x2="118" y2="323" class="grid"/>
+    <line x1="252" y1="57" x2="252" y2="323" class="grid"/>
+    <line x1="52" y1="123" x2="318" y2="123" class="grid"/>
+    <line x1="52" y1="257" x2="318" y2="257" class="grid"/>
+    <text x="326" y="194" class="small">u</text>
+    <text x="174" y="51" class="small">v</text>
+
+    <g transform="translate(185 190)">
+      <ellipse cx="0" cy="0" rx="38" ry="14" class="contour"/>
+      <ellipse cx="0" cy="0" rx="70" ry="25" class="contour"/>
+      <ellipse cx="0" cy="0" rx="103" ry="37" class="contour-mid"/>
+      <ellipse cx="0" cy="0" rx="132" ry="48" class="contour-strong"/>
+      <line x1="-125" y1="0" x2="105" y2="0" class="flat"/>
+      <line x1="0" y1="44" x2="0" y2="-74" class="steep"/>
+    </g>
+
+    <line x1="185" y1="190" x2="268" y2="190" class="basis"/>
+    <line x1="185" y1="190" x2="185" y2="107" class="basis"/>
+    <text x="272" y="213" class="small">只改 u</text>
+    <text x="116" y="105" class="small">只改 v</text>
+    <text x="54" y="172" class="small green">平方向</text>
+    <text x="206" y="100" class="small red">陡方向</text>
+
+    <rect x="24" y="338" width="322" height="58" class="note"/>
+    <text x="185" y="360" text-anchor="middle" class="label">等高线狭长：不同方向尺度差异很大</text>
+    <text x="185" y="382" text-anchor="middle" class="small">沿谷底走更有效；撞向谷壁会来回摆</text>
+  </g>
+</svg>
