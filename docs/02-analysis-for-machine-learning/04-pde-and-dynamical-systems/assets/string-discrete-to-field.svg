@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+  <title id="title">弦振动中的基准位置和位移</title>
+  <desc id="desc">一条平衡线和一条振动后的正弦曲线。x_i 表示质点在平衡线上的基准位置，u_i(t) 表示该点到振动后曲线的竖直位移。</desc>
+  <rect width="900" height="380" fill="#ffffff"/>
+
+  <text x="58" y="46" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#111827">弦振动：x 是基准位置，u 是竖直位移</text>
+  <text x="58" y="77" font-family="Arial, sans-serif" font-size="16" fill="#4b5563">同一个质点沿弦方向的基准位置是 x_i；振动后离开平衡线的高度是 u_i(t)。</text>
+
+  <line x1="80" y1="205" x2="805" y2="205" stroke="#6b7280" stroke-width="2" stroke-dasharray="8 7"/>
+  <path d="M805 205 L793 199 L793 211 Z" fill="#6b7280"/>
+  <text x="820" y="211" font-family="Arial, sans-serif" font-size="18" fill="#374151">x</text>
+  <text x="82" y="229" font-family="Arial, sans-serif" font-size="15" fill="#6b7280">平衡线 / 基准位置</text>
+
+  <path d="M80 205 C110 145 140 115 170 115 C200 115 230 145 260 205 C290 265 320 295 350 295 C380 295 410 265 440 205 C470 145 500 115 530 115 C560 115 590 145 620 205 C650 265 680 295 710 295 C740 295 770 265 800 205" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+  <text x="610" y="132" font-family="Arial, sans-serif" font-size="17" fill="#2563eb">振动后的弦</text>
+
+  <g font-family="Arial, sans-serif" font-size="15">
+    <circle cx="80" cy="205" r="4" fill="#9ca3af"/>
+    <circle cx="80" cy="205" r="5" fill="#9ca3af" opacity="0.7"/>
+    <circle cx="260" cy="205" r="4" fill="#9ca3af"/>
+    <circle cx="260" cy="205" r="5" fill="#9ca3af" opacity="0.7"/>
+    <circle cx="350" cy="205" r="4" fill="#9ca3af"/>
+    <circle cx="350" cy="295" r="5" fill="#9ca3af" opacity="0.7"/>
+    <circle cx="530" cy="205" r="4" fill="#9ca3af"/>
+    <circle cx="530" cy="115" r="5" fill="#9ca3af" opacity="0.7"/>
+
+    <line x1="170" y1="205" x2="170" y2="124" stroke="#d9480f" stroke-width="3"/>
+    <circle cx="170" cy="205" r="6" fill="#111827"/>
+    <circle cx="170" cy="115" r="8" fill="#d9480f" stroke="#ffffff" stroke-width="2"/>
+    <text x="158" y="236" fill="#111827">x_i</text>
+    <text x="184" y="164" fill="#d9480f">u_i(t)</text>
+
+    <line x1="170" y1="318" x2="260" y2="318" stroke="#6b7280" stroke-width="2"/>
+    <line x1="170" y1="311" x2="170" y2="325" stroke="#6b7280" stroke-width="2"/>
+    <line x1="260" y1="311" x2="260" y2="325" stroke="#6b7280" stroke-width="2"/>
+    <text x="203" y="346" fill="#6b7280">Δx</text>
+  </g>
+
+  <rect x="560" y="238" width="260" height="70" rx="6" fill="#f8fafc" stroke="#d1d5db"/>
+  <text x="580" y="266" font-family="Arial, sans-serif" font-size="16" fill="#111827">x_i：平衡线上的基准位置</text>
+  <text x="580" y="294" font-family="Arial, sans-serif" font-size="16" fill="#111827">u_i(t)：振动后的竖直位移</text>
+</svg>
