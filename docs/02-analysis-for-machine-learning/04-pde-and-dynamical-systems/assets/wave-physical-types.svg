@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="300" viewBox="0 0 980 300" role="img" aria-labelledby="title desc">
+  <title id="title">按物理机制给波分类</title>
+  <desc id="desc">把波按物理机制分成机械波和电磁波，声波、水波、地震波作为机械波的例子。</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfaf7}.panel{fill:#fff;stroke:#d7d2c8;stroke-width:1.2}.label{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:16px;font-weight:700;fill:#27221d}.small{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:13px;fill:#61584f}.axis{stroke:#8b7f70;stroke-width:1.2}.blue{fill:none;stroke:#2563eb;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.red{fill:none;stroke:#e11d48;stroke-width:2.8;stroke-linecap:round}.green{fill:none;stroke:#0f766e;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}.tag{fill:#f3efe7;stroke:#d7d2c8;stroke-width:1}.tagText{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:13px;fill:#3f3831}.dot{fill:#111827}
+    </style>
+  </defs>
+  <rect class="bg" width="980" height="300"/>
+  <text class="label" x="40" y="36">分类法一：按物理机制，看“什么东西在振动”</text>
+
+  <rect class="panel" x="40" y="64" width="430" height="190" rx="8"/>
+  <text class="label" x="62" y="96">机械波：需要介质</text>
+  <line class="axis" x1="72" y1="157" x2="438" y2="157"/>
+  <path class="blue" d="M72 157 C105 112,138 112,171 157 S237 202,270 157 S336 112,369 157 S420 192,438 170"/>
+  <circle class="dot" cx="112" cy="136" r="3"/><circle class="dot" cx="172" cy="157" r="3"/><circle class="dot" cx="232" cy="178" r="3"/><circle class="dot" cx="292" cy="136" r="3"/><circle class="dot" cx="352" cy="157" r="3"/>
+  <rect class="tag" x="74" y="205" width="56" height="25" rx="6"/><text class="tagText" x="88" y="222">弦波</text>
+  <rect class="tag" x="144" y="205" width="56" height="25" rx="6"/><text class="tagText" x="158" y="222">声波</text>
+  <rect class="tag" x="214" y="205" width="56" height="25" rx="6"/><text class="tagText" x="228" y="222">水波</text>
+  <rect class="tag" x="284" y="205" width="68" height="25" rx="6"/><text class="tagText" x="298" y="222">地震波</text>
+  <rect class="tag" x="366" y="205" width="58" height="25" rx="6"/><text class="tagText" x="380" y="222">弹性波</text>
+
+  <rect class="panel" x="510" y="64" width="430" height="190" rx="8"/>
+  <text class="label" x="532" y="96">电磁波：电场和磁场传播</text>
+  <line class="axis" x1="542" y1="157" x2="908" y2="157"/>
+  <path class="red" d="M545 157 C578 112,611 112,644 157 S710 202,743 157 S809 112,842 157 S890 193,908 172"/>
+  <path class="green" d="M545 157 C578 202,611 202,644 157 S710 112,743 157 S809 202,842 157 S890 121,908 142"/>
+  <rect class="tag" x="544" y="205" width="44" height="25" rx="6"/><text class="tagText" x="558" y="222">光</text>
+  <rect class="tag" x="602" y="205" width="72" height="25" rx="6"/><text class="tagText" x="616" y="222">无线电波</text>
+  <rect class="tag" x="688" y="205" width="56" height="25" rx="6"/><text class="tagText" x="702" y="222">微波</text>
+  <rect class="tag" x="758" y="205" width="62" height="25" rx="6"/><text class="tagText" x="772" y="222">X 射线</text>
+</svg>

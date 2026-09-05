@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="380" viewBox="0 0 980 380" role="img" aria-labelledby="title desc">
+  <title id="title">按运动方式给波分类</title>
+  <desc id="desc">比较行波和驻波：行波的同一形状连续平移，驻波的节点固定、振幅缩放并上下翻转。</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfaf7}.panel{fill:#fff;stroke:#d7d2c8;stroke-width:1.2}.label{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:16px;font-weight:700;fill:#27221d}.small{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:13px;fill:#61584f}.tiny{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:11px;fill:#61584f}.axis{stroke:#777;stroke-width:1.2}.grid{stroke:#e8e2d8;stroke-width:1}.wave0{fill:none;stroke:#2563eb;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.wave1{fill:none;stroke:#0f766e;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7 6}.wave2{fill:none;stroke:#f59e0b;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4 6}.wave3{fill:none;stroke:#e11d48;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:9 7}.thin{fill:none;stroke:#8b7f70;stroke-width:1.5;stroke-dasharray:5 6}.node{fill:#111827}.arrow{stroke:#111827;stroke-width:1.4;fill:none;marker-end:url(#arr)}.flat{stroke:#6b7280;stroke-width:2.2;stroke-dasharray:3 6}
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#111827"/></marker>
+  </defs>
+  <rect class="bg" width="980" height="380"/>
+  <text class="label" x="40" y="36">分类法二：按运动方式，看“形状是在移动，还是在原地振荡”</text>
+
+  <rect class="panel" x="40" y="70" width="430" height="250" rx="8"/>
+  <text class="label" x="62" y="102">行波：同一个形状连续向右移动</text>
+  <line class="axis" x1="70" y1="198" x2="440" y2="198"/>
+  <line class="grid" x1="70" y1="148" x2="440" y2="148"/>
+  <path class="wave0" d="M70 198 C95 158,120 146,145 173 C170 200,190 236,217 217 C240 200,249 157,275 152 C301 147,325 180,345 198 C373 223,400 220,430 184"/>
+  <path class="wave1" d="M98 198 C123 158,148 146,173 173 C198 200,218 236,245 217 C268 200,277 157,303 152 C329 147,353 180,373 198 C401 223,424 219,442 195"/>
+  <path class="wave2" d="M126 198 C151 158,176 146,201 173 C226 200,246 236,273 217 C296 200,305 157,331 152 C357 147,381 180,401 198 C419 214,431 220,444 216"/>
+  <path class="wave3" d="M154 198 C179 158,204 146,229 173 C254 200,274 236,301 217 C324 200,333 157,359 152 C385 147,409 180,429 198"/>
+  <text class="tiny" x="82" y="135">t0</text><text class="tiny" x="112" y="135">t1</text><text class="tiny" x="142" y="135">t2</text><text class="tiny" x="172" y="135">t3</text>
+  <path class="arrow" d="M214 272 H315"/>
+  <text class="small" x="82" y="300">同一个波形在不同时间出现在更右边</text>
+
+  <rect class="panel" x="510" y="70" width="430" height="250" rx="8"/>
+  <text class="label" x="532" y="102">驻波：节点固定，振幅缩放并翻转</text>
+  <line class="axis" x1="540" y1="198" x2="910" y2="198"/>
+  <line class="grid" x1="540" y1="148" x2="910" y2="148"/>
+  <line class="thin" x1="540" y1="128" x2="540" y2="268"/>
+  <line class="thin" x1="663" y1="128" x2="663" y2="268"/>
+  <line class="thin" x1="786" y1="128" x2="786" y2="268"/>
+  <line class="thin" x1="910" y1="128" x2="910" y2="268"/>
+  <path class="wave0" d="M540 198 C575 134,628 134,663 198 C698 262,751 262,786 198 C821 134,874 134,910 198"/>
+  <path class="wave1" d="M540 198 C575 166,628 166,663 198 C698 230,751 230,786 198 C821 166,874 166,910 198"/>
+  <line class="flat" x1="540" y1="198" x2="910" y2="198"/>
+  <path class="wave3" d="M540 198 C575 262,628 262,663 198 C698 134,751 134,786 198 C821 262,874 262,910 198"/>
+  <circle class="node" cx="540" cy="198" r="4"/><circle class="node" cx="663" cy="198" r="4"/><circle class="node" cx="786" cy="198" r="4"/><circle class="node" cx="910" cy="198" r="4"/>
+  <text class="tiny" x="558" y="135">最高</text><text class="tiny" x="592" y="166">变矮</text><text class="tiny" x="674" y="191">拉平</text><text class="tiny" x="704" y="262">反向</text>
+  <text class="small" x="552" y="300">节点一直在黑点处；波峰不搬家，只上下振荡</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="760" viewBox="0 0 980 760" role="img" aria-labelledby="title desc">
+  <title id="title">几种基本波形与时间信号</title>
+  <desc id="desc">比较行波、简谐波、驻波和脉冲波，并在底部展示固定位置处随时间看到的信号。</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .panel { fill: #ffffff; stroke: #d7d2c8; stroke-width: 1.2; rx: 8; }
+      .axis { stroke: #777; stroke-width: 1.2; }
+      .grid { stroke: #e8e2d8; stroke-width: 0.8; }
+      .curve1 { fill: none; stroke: #2563eb; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .curve2 { fill: none; stroke: #e11d48; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 7 6; }
+      .curve3 { fill: none; stroke: #0f766e; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .curve4 { fill: none; stroke: #7c3aed; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #8b7f70; stroke-width: 1.6; stroke-dasharray: 5 6; }
+      .label { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 15px; fill: #27221d; }
+      .small { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 12px; fill: #61584f; }
+      .title { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #1f2937; }
+      .note { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; font-size: 13px; fill: #514840; }
+      .dot { fill: #111827; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="980" height="760"/>
+  <text class="title" x="40" y="38">几种基本波形：先看空间形状，再看固定位置的时间信号</text>
+
+  <rect class="panel" x="40" y="64" width="430" height="170" rx="8"/>
+  <text class="label" x="62" y="92">行波：同一个形状向右移动</text>
+  <line class="axis" x1="70" y1="168" x2="440" y2="168"/>
+  <line class="grid" x1="70" y1="116" x2="440" y2="116"/>
+  <path class="curve1" d="M75 168 C100 128,125 116,150 143 C175 170,195 206,222 187 C245 170,254 127,280 122 C306 117,330 150,350 168 C378 193,405 190,435 154"/>
+  <path class="curve2" d="M115 168 C140 128,165 116,190 143 C215 170,235 206,262 187 C285 170,294 127,320 122 C346 117,370 150,390 168 C418 193,435 188,448 172"/>
+  <text class="small" x="82" y="218">蓝线 t=0</text>
+  <text class="small" x="180" y="218">红虚线 t&gt;0，整体右移</text>
+  <text class="small" x="396" y="185">x</text>
+
+  <rect class="panel" x="510" y="64" width="430" height="170" rx="8"/>
+  <text class="label" x="532" y="92">简谐波：最纯的正弦行波</text>
+  <line class="axis" x1="540" y1="168" x2="910" y2="168"/>
+  <line class="grid" x1="540" y1="116" x2="910" y2="116"/>
+  <path class="curve3" d="M540 168 C555 126,585 126,600 168 C615 210,645 210,660 168 C675 126,705 126,720 168 C735 210,765 210,780 168 C795 126,825 126,840 168 C855 210,885 210,910 142"/>
+  <text class="small" x="555" y="218">u(x,t)=A sin(kx-wt+phi)</text>
+  <text class="small" x="866" y="185">x</text>
+
+  <rect class="panel" x="40" y="260" width="430" height="180" rx="8"/>
+  <text class="label" x="62" y="290">驻波：节点固定，同一位置上下翻转</text>
+  <line class="axis" x1="70" y1="354" x2="440" y2="354"/>
+  <line class="grid" x1="70" y1="306" x2="440" y2="306"/>
+  <line class="thin" x1="70" y1="302" x2="70" y2="406"/>
+  <line class="thin" x1="190" y1="302" x2="190" y2="406"/>
+  <line class="thin" x1="310" y1="302" x2="310" y2="406"/>
+  <line class="thin" x1="440" y1="302" x2="440" y2="406"/>
+  <path class="curve1" d="M70 354 C105 290,155 290,190 354 C225 418,275 418,310 354 C345 290,395 290,440 354"/>
+  <path class="curve2" d="M70 354 C105 418,155 418,190 354 C225 290,275 290,310 354 C345 418,395 418,440 354"/>
+  <circle class="dot" cx="70" cy="354" r="4"/><circle class="dot" cx="190" cy="354" r="4"/><circle class="dot" cx="310" cy="354" r="4"/><circle class="dot" cx="440" cy="354" r="4"/>
+  <line x1="130" y1="296" x2="130" y2="412" stroke="#111827" stroke-width="1.2" marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
+  <text class="small" x="82" y="424">黑点/竖线是节点：位置不动</text>
+  <text class="small" x="245" y="424">蓝红是同一形状上下翻转</text>
+
+  <rect class="panel" x="510" y="260" width="430" height="180" rx="8"/>
+  <text class="label" x="532" y="290">脉冲波：一团局部扰动传播出去</text>
+  <line class="axis" x1="540" y1="354" x2="910" y2="354"/>
+  <line class="grid" x1="540" y1="306" x2="910" y2="306"/>
+  <path class="curve4" d="M540 354 C575 354,600 354,620 352 C645 348,655 302,680 302 C705 302,715 348,740 352 C765 354,820 354,910 354"/>
+  <path class="thin" d="M540 354 C615 354,650 354,670 352 C695 348,705 302,730 302 C755 302,765 348,790 352 C815 354,860 354,910 354"/>
+  <text class="small" x="552" y="424">紫线 t=0，灰虚线 t&gt;0：凸起向右走</text>
+
+  <rect class="panel" x="40" y="474" width="900" height="230" rx="8"/>
+  <text class="label" x="62" y="504">固定一个位置 x=x0，只看时间 t，会看到什么？</text>
+
+  <line class="axis" x1="80" y1="610" x2="430" y2="610"/>
+  <line class="grid" x1="80" y1="552" x2="430" y2="552"/>
+  <path class="curve3" d="M80 610 C95 552,125 552,140 610 C155 668,185 668,200 610 C215 552,245 552,260 610 C275 668,305 668,320 610 C335 552,365 552,380 610 C395 668,420 658,430 610"/>
+  <text class="small" x="92" y="686">简谐行波经过 x0：随时间周期振荡</text>
+  <text class="small" x="390" y="628">t</text>
+
+  <line class="axis" x1="545" y1="610" x2="895" y2="610"/>
+  <line class="grid" x1="545" y1="552" x2="895" y2="552"/>
+  <path class="curve4" d="M545 610 C585 610,625 610,660 608 C690 604,700 552,725 552 C750 552,760 604,790 608 C825 610,860 610,895 610"/>
+  <line class="thin" x1="545" y1="610" x2="895" y2="610"/>
+  <text class="small" x="558" y="686">脉冲波经过 x0：先平静，经过时突然起伏，再恢复</text>
+  <text class="small" x="860" y="628">t</text>
+
+  <text class="note" x="62" y="733">上面四幅图看空间 x；下面两幅图固定位置 x0，看时间 t。空间图回答“形状在哪里”，时间图回答“这个位置什么时候被波影响”。</text>
+</svg>
