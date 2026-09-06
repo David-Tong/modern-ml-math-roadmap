@@ -1,60 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="720" viewBox="0 0 1250 720" role="img" aria-labelledby="title desc">
   <title id="title">特征线上的链式法则</title>
-  <desc id="desc">在 x-t 平面中展示沿路径 x(t) 前进时，时间变化 dt 和空间移动 dx 如何共同贡献总变化率。</desc>
+  <desc id="desc">用相同编号对应左侧几何图和右侧公式，说明沿路线真实走一步时如何用全微分把变化量拆成时间贡献和空间位置贡献。</desc>
   <defs>
     <style>
-      .bg{fill:#fbfaf7}.panel{fill:#fff;stroke:#d7d2c8;stroke-width:1.2}.axis{stroke:#333;stroke-width:1.6}.grid{stroke:#e8e2d8;stroke-width:1}.char{fill:none;stroke:#2563eb;stroke-width:3;stroke-linecap:round}.step{stroke:#111827;stroke-width:2;fill:none;marker-end:url(#arr)}.dash{stroke:#8b7f70;stroke-width:1.4;stroke-dasharray:5 6}.time{stroke:#e11d48;stroke-width:2.4;fill:none;marker-end:url(#arrRed)}.space{stroke:#0f766e;stroke-width:2.4;fill:none;marker-end:url(#arrGreen)}.dot{fill:#111827}.label{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:16px;font-weight:700;fill:#27221d}.small{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:13px;fill:#61584f}.formula{font-family:"Cambria Math","Times New Roman",serif;font-size:17px;fill:#27221d}.redText{fill:#b91c1c}.greenText{fill:#047857}.blueText{fill:#1d4ed8}.note{fill:#fbfaf7;stroke:#ebe4d8;stroke-width:1}
+      .bg{fill:#fbfaf7}.panel{fill:#fff;stroke:#d7d2c8;stroke-width:1.2}.box{fill:#fbfaf7;stroke:#ebe4d8;stroke-width:1}.axis{stroke:#333;stroke-width:1.6}.grid{stroke:#e8e2d8;stroke-width:1}.char{fill:none;stroke:#2563eb;stroke-width:3;stroke-linecap:round}.actual{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#arrBlue)}.time{stroke:#e11d48;stroke-width:2.7;fill:none;marker-end:url(#arrRed)}.space{stroke:#0f766e;stroke-width:2.7;fill:none;marker-end:url(#arrGreen)}.dash{stroke:#8b7f70;stroke-width:1.3;stroke-dasharray:5 6}.dot{fill:#111827}.badge{fill:#111827}.label{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:16px;font-weight:700;fill:#27221d}.small{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:13px;fill:#61584f}.tiny{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;font-size:12px;fill:#61584f}.num{font-family:Arial,sans-serif;font-size:13px;font-weight:700;fill:#fff}.formula{font-family:"Cambria Math","Times New Roman",serif;font-size:17px;fill:#27221d}.redText{fill:#b91c1c}.greenText{fill:#047857}.blueText{fill:#1d4ed8}.strong{font-weight:700;fill:#27221d}
     </style>
     <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#111827"/></marker>
     <marker id="arrRed" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#e11d48"/></marker>
     <marker id="arrGreen" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#0f766e"/></marker>
+    <marker id="arrBlue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#2563eb"/></marker>
   </defs>
-  <rect class="bg" width="980" height="500"/>
-  <text class="label" x="40" y="36">沿特征线看 u(x,t)：总变化 = 时间贡献 + 空间移动贡献</text>
 
-  <rect class="panel" x="40" y="64" width="560" height="380" rx="8"/>
-  <line class="grid" x1="110" y1="370" x2="520" y2="370"/>
-  <line class="grid" x1="110" y1="290" x2="520" y2="290"/>
-  <line class="grid" x1="110" y1="210" x2="520" y2="210"/>
-  <line class="grid" x1="110" y1="130" x2="520" y2="130"/>
-  <line class="grid" x1="190" y1="390" x2="190" y2="100"/>
-  <line class="grid" x1="270" y1="390" x2="270" y2="100"/>
-  <line class="grid" x1="350" y1="390" x2="350" y2="100"/>
-  <line class="grid" x1="430" y1="390" x2="430" y2="100"/>
-  <line class="axis" x1="110" y1="390" x2="520" y2="390" marker-end="url(#arr)"/>
-  <line class="axis" x1="110" y1="390" x2="110" y2="92" marker-end="url(#arr)"/>
-  <text class="small" x="522" y="396">x</text>
-  <text class="small" x="98" y="88">t</text>
+  <rect class="bg" width="1250" height="720"/>
+  <text class="label" x="40" y="38">沿路线看 u(x,t)：用全微分把同一步的变化拆成两部分</text>
 
-  <path class="char" d="M150 350 L470 110"/>
-  <text class="small blueText" x="374" y="130">特征线 x=x0+ct</text>
+  <rect class="panel" x="40" y="70" width="690" height="610" rx="8"/>
+  <text class="label" x="68" y="104">左边：在 (x,t) 平面里看同一小步</text>
 
-  <circle class="dot" cx="270" cy="260" r="5"/>
-  <circle class="dot" cx="350" cy="200" r="5"/>
-  <text class="small" x="210" y="252">(x(t),t)</text>
-  <text class="small" x="356" y="195">(x(t)+dx,t+dt)</text>
+  <line class="grid" x1="125" y1="500" x2="645" y2="500"/>
+  <line class="grid" x1="125" y1="405" x2="645" y2="405"/>
+  <line class="grid" x1="125" y1="310" x2="645" y2="310"/>
+  <line class="grid" x1="125" y1="215" x2="645" y2="215"/>
+  <line class="grid" x1="245" y1="530" x2="245" y2="150"/>
+  <line class="grid" x1="365" y1="530" x2="365" y2="150"/>
+  <line class="grid" x1="485" y1="530" x2="485" y2="150"/>
+  <line class="grid" x1="605" y1="530" x2="605" y2="150"/>
+  <line class="axis" x1="125" y1="530" x2="662" y2="530" marker-end="url(#arr)"/>
+  <line class="axis" x1="125" y1="530" x2="125" y2="135" marker-end="url(#arr)"/>
+  <text class="small" x="672" y="536">x</text>
+  <text class="small" x="112" y="130">t</text>
 
-  <line class="time" x1="270" y1="260" x2="270" y2="200"/>
-  <line class="space" x1="270" y1="200" x2="350" y2="200"/>
-  <line class="dash" x1="350" y1="200" x2="350" y2="260"/>
-  <line class="dash" x1="270" y1="260" x2="350" y2="260"/>
-  <text class="small redText" x="232" y="232">dt</text>
-  <text class="small greenText" x="306" y="188">dx=x'(t)dt</text>
-  <text class="small" x="280" y="292">一小步里，时间和位置同时改变</text>
+  <path class="char" d="M180 472 L595 168"/>
+  <text class="small blueText" x="488" y="166">路线 x=x(t)</text>
 
-  <rect class="panel" x="635" y="64" width="305" height="380" rx="8"/>
-  <text class="label" x="662" y="100">链式法则在算什么</text>
-  <text class="small" x="662" y="135">沿蓝色路径走时，u 的变化量近似为：</text>
-  <text class="formula" x="662" y="170">du ≈ u_t dt + u_x dx</text>
-  <rect class="note" x="662" y="195" width="238" height="58" rx="6"/>
-  <text class="small redText" x="678" y="218">u_t dt：</text>
-  <text class="small" x="735" y="218">时间变化贡献</text>
-  <text class="small" x="678" y="240">先只看 t 增加带来的变化</text>
-  <rect class="note" x="662" y="270" width="238" height="72" rx="6"/>
-  <text class="small greenText" x="678" y="294">u_x dx：</text>
-  <text class="small" x="735" y="294">位置移动贡献</text>
-  <text class="small" x="678" y="316">走到新位置后，空间高度</text>
-  <text class="small" x="678" y="334">也会带来额外变化</text>
-  <text class="small" x="662" y="374">除以 dt：</text>
-  <text class="formula" x="662" y="405">d/dt u(x(t),t)=u_t+x'(t)u_x</text>
+  <circle class="dot" cx="330" cy="365" r="5"/>
+  <circle class="dot" cx="460" cy="270" r="5"/>
+  <text class="formula" x="176" y="390">(x(t), t)</text>
+  <text class="formula" x="472" y="250">(x(t)+dx, t+dt)</text>
+
+  <line class="actual" x1="336" y1="361" x2="452" y2="276"/>
+  <circle class="badge" cx="392" cy="321" r="13"/><text class="num" x="388" y="326">1</text>
+
+  <line class="time" x1="330" y1="365" x2="330" y2="270"/>
+  <circle class="badge" cx="302" cy="318" r="13"/><text class="num" x="298" y="323">2</text>
+
+  <line class="space" x1="330" y1="270" x2="460" y2="270"/>
+  <circle class="badge" cx="395" cy="246" r="13"/><text class="num" x="391" y="251">3</text>
+
+  <line class="dash" x1="460" y1="270" x2="460" y2="365"/>
+  <line class="dash" x1="330" y1="365" x2="460" y2="365"/>
+
+  <rect class="box" x="72" y="565" width="620" height="82" rx="6"/>
+  <text class="small" x="92" y="591">1 真实小步：沿路线从 (x(t),t) 到 (x(t)+dx,t+dt)</text>
+  <text class="small redText" x="92" y="616">2 时间贡献：位置先不动，只让时间变 dt</text>
+  <text class="small greenText" x="360" y="616">3 位置贡献：时间先固定，只让位置变 dx</text>
+  <text class="small strong" x="92" y="640">全微分：把 1 的一阶变化近似写成 2 + 3。</text>
+
+  <rect class="panel" x="760" y="70" width="450" height="610" rx="8"/>
+  <text class="label" x="790" y="104">右边：同样编号对应同样含义</text>
+
+  <rect class="box" x="790" y="130" width="380" height="105" rx="6"/>
+  <circle class="badge" cx="814" cy="158" r="13"/><text class="num" x="810" y="163">1</text>
+  <text class="small blueText strong" x="840" y="162">真实沿路线走</text>
+  <text class="small" x="814" y="191">看到的是复合函数 U(t)=u(x(t),t) 的总变化</text>
+  <text class="formula" x="814" y="220">dU = U(t+dt)-U(t)</text>
+
+  <rect class="box" x="790" y="265" width="380" height="100" rx="6"/>
+  <circle class="badge" cx="814" cy="293" r="13"/><text class="num" x="810" y="298">2</text>
+  <text class="small redText strong" x="840" y="297">时间贡献</text>
+  <text class="small" x="814" y="326">对应左边红色竖箭头</text>
+  <text class="formula" x="814" y="353">(∂u/∂t) dt</text>
+
+  <rect class="box" x="790" y="400" width="380" height="105" rx="6"/>
+  <circle class="badge" cx="814" cy="428" r="13"/><text class="num" x="810" y="433">3</text>
+  <text class="small greenText strong" x="840" y="432">位置移动贡献</text>
+  <text class="small" x="814" y="461">对应左边绿色横箭头，且 dx=x'(t)dt</text>
+  <text class="formula" x="814" y="489">(∂u/∂x) dx</text>
+
+  <rect class="box" x="790" y="535" width="380" height="100" rx="6"/>
+  <text class="small strong" x="814" y="562">全微分给出：</text>
+  <text class="formula" x="814" y="591">dU ≈ (∂u/∂t)dt + (∂u/∂x)dx</text>
+  <text class="formula" x="814" y="622">dU/dt = ∂u/∂t + x'(t)∂u/∂x</text>
 </svg>
