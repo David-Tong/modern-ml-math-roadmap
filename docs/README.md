@@ -1,4 +1,4 @@
-﻿# 学习现代机器学习理论，需要补哪些数学课？
+# 学习现代机器学习理论，需要补哪些数学课？
 
 这套文档面向已经学过工科基础数学的读者：默认你熟悉微积分、线性代数、概率论与数理统计，并能理解传统机器学习入门内容。这里要补的不是“从零学数学”，而是给现代机器学习理论准备更合适的数学坐标系。
 
@@ -16,12 +16,13 @@
 
 ### 二、分析视角：极限、函数空间与优化
 
-[分析与机器学习](02-analysis-for-machine-learning/) 组织实变函数、测度论、最优化理论和变分法、泛函分析、偏微分方程和动力系统相关内容。凸分析作为凸优化的重要语言，已经并入“最优化理论和变分法”。
+[分析与机器学习](02-analysis-for-machine-learning/) 组织实变函数、测度论、最优化理论和变分法、泛函分析、偏微分方程、动力系统与自动控制原理相关内容。凸分析作为凸优化的重要语言，已经并入“最优化理论和变分法”。
 
 - [最优化理论和变分法](02-analysis-for-machine-learning/01-optimization-theory-and-calculus-of-variations/)：理解梯度下降、随机梯度下降、凸优化、约束优化、KKT 条件、正则化、泛函导数和“寻找最优函数”的问题。
 - [实变函数与测度论](02-analysis-for-machine-learning/02-real-analysis-and-measure-theory/)：为概率分布、积分、几乎处处、收敛和泛化分析提供严格语言。
 - [泛函分析](02-analysis-for-machine-learning/03-functional-analysis/)：把线性代数的空间观念推广到函数空间，连接核方法、函数逼近、正则化和算子学习。
-- [偏微分方程和动力系统](02-analysis-for-machine-learning/04-pde-and-dynamical-systems/)：描述连续时间或连续空间中的演化过程，连接神经 ODE、扩散模型、连续优化和 mean-field 分析。
+- [微分方程](02-analysis-for-machine-learning/04-differential-equations/)：学习 ODE 与 PDE 的基本理论、求解方法和数学物理概念，连接扩散模型、神经算子和 PINN。
+- [动力系统与自动控制原理](02-analysis-for-machine-learning/05-dynamical-systems-and-control/)：理解状态演化、稳定性、梯度流、反馈和最优控制，连接神经 ODE、连续优化和强化学习。
 
 ### 三、几何视角：形状、空间与分布
 

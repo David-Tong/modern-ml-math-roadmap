@@ -1,4 +1,4 @@
-﻿# 从泛函观点看机器学习
+# 从泛函观点看机器学习
 
 机器学习最终常常要回答“函数怎样变化”的问题。模型是函数，损失是在评价函数，训练是在函数族里寻找更好的函数，泛化则关心这种寻找过程在新数据上是否仍然稳定。
 
@@ -9,4 +9,5 @@
 - [最优化理论和变分法](01-optimization-theory-and-calculus-of-variations/)
 - [实变函数与测度论](02-real-analysis-and-measure-theory/)
 - [泛函分析](03-functional-analysis/)
-- [偏微分方程和动力系统](04-pde-and-dynamical-systems/)
+- [微分方程](04-differential-equations/)
+- [动力系统与自动控制原理](05-dynamical-systems-and-control/)
