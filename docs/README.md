@@ -22,7 +22,7 @@
 - [实变函数与测度论](02-analysis-for-machine-learning/02-real-analysis-and-measure-theory/)：为概率分布、积分、几乎处处、收敛和泛化分析提供严格语言。
 - [泛函分析](02-analysis-for-machine-learning/03-functional-analysis/)：把线性代数的空间观念推广到函数空间，连接核方法、函数逼近、正则化和算子学习。
 - [微分方程](02-analysis-for-machine-learning/04-differential-equations/)：学习 ODE 与 PDE 的基本理论、求解方法和数学物理概念，连接扩散模型、神经算子和 PINN。
-- [动力系统与自动控制原理](02-analysis-for-machine-learning/05-dynamical-systems-and-control/)：理解状态演化、稳定性、梯度流、反馈和最优控制，连接神经 ODE、连续优化和强化学习。
+- [动力系统与自动控制原理](02-analysis-for-machine-learning/05-dynamical-systems-and-control/)：理解状态演化、稳定性、梯度流、信号与系统、傅里叶与拉普拉斯变换、反馈和最优控制，连接神经 ODE、连续优化和强化学习。
 
 ### 三、几何视角：形状、空间与分布
 

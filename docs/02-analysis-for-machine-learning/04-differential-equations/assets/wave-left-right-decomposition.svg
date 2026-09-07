@@ -12,7 +12,7 @@
 
   <rect class="panel" x="40" y="68" width="900" height="185" rx="8"/>
   <text class="label" x="62" y="100">例 A：只拉出形状，然后静止释放</text>
-  <text class="formula" x="62" y="128">u(x,0)=f(x),  u_t(x,0)=0</text>
+  <text class="formula" x="62" y="128">u(x,0)=f(x),  (∂u/∂t)(x,0)=0</text>
   <line class="axis" x1="72" y1="190" x2="390" y2="190"/>
   <path class="initial" d="M76 190 C125 190,150 190,170 188 C195 185,205 138,232 138 C259 138,269 185,294 188 C315 190,350 190,386 190"/>
   <text class="tiny" x="178" y="225">t=0：一个初始凸起</text>
@@ -26,7 +26,7 @@
 
   <rect class="panel" x="40" y="285" width="900" height="185" rx="8"/>
   <text class="label" x="62" y="317">例 B：初始速度正好让形状向右平移</text>
-  <text class="formula" x="62" y="345">u(x,0)=f(x),  u_t(x,0)=-c f'(x)</text>
+  <text class="formula" x="62" y="345">u(x,0)=f(x),  (∂u/∂t)(x,0)=-c f'(x)</text>
   <line class="axis" x1="72" y1="407" x2="390" y2="407"/>
   <path class="initial" d="M76 407 C125 407,150 407,170 405 C195 402,205 355,232 355 C259 355,269 402,294 405 C315 407,350 407,386 407"/>
   <path class="arrow" d="M210 355 H274"/>
