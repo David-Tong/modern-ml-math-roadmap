@@ -9,5 +9,6 @@
 - [最优化理论和变分法](01-optimization-theory-and-calculus-of-variations/)
 - [实变函数与测度论](02-real-analysis-and-measure-theory/)
 - [泛函分析](03-functional-analysis/)
-- [微分方程](04-differential-equations/)
-- [动力系统与自动控制原理](05-dynamical-systems-and-control/)
+- [常微分方程](04-ordinary-differential-equations/)
+- [偏微分方程](05-partial-differential-equations/)
+- [动力系统与自动控制原理](06-dynamical-systems-and-control/)
