@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="280.8pt" viewBox="0 0 576 280.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="328.8pt" viewBox="0 0 576 328.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -2618,4 +2618,5 @@ z
    <rect x="41.077427" y="25.55199" width="531.922333" height="218.192457"/>
   </clipPath>
  </defs>
+<g id="initial-condition-caption"><rect x="0" y="280.8" width="576.0" height="48" fill="white"/><text x="288.0" y="297.8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#333333">基本解 cosh t：初值 (1, 0)；基本解 sinh t：初值 (0, 1)。</text><text x="288.0" y="314.8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" font-size="10" fill="#333333">初值记为 (y(0), y′(0))；一般解为 y₀ cosh t + v₀ sinh t。</text></g>
 </svg>
