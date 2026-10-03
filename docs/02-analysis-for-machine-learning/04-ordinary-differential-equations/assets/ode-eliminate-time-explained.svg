@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="480" viewBox="0 0 1080 480" role="img" aria-labelledby="title"><title id="title">消去时间：把同一时刻的两个数，合成相图上的一个点</title><rect width="1080" height="480" fill="white"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="540" y="30" font-size="22" fill="#1e293b" text-anchor="middle">消去时间：把同一时刻的两个数，合成相图上的一个点</text>
+<text x="285" y="67" font-size="18" fill="#1e293b" text-anchor="middle">左：分别看 x 和 y 随时间变化</text>
+<text x="285" y="92" font-size="14" fill="#64748b" text-anchor="middle">x′ = 1，y′ = 2；从 (0, 0) 出发</text>
+<polyline points="85,390 450,390" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="85,390 85,140" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-linejoin="round"/>
+<text x="462" y="395" font-size="16" fill="#1e293b" text-anchor="middle">t</text>
+<text x="85" y="128" font-size="16" fill="#1e293b" text-anchor="middle">数值</text>
+<polyline points="85,390 402.391,281.304" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="85,390 402.391,172.609" fill="none" stroke="#d97706" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="243.696,390 243.696,281.304" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<circle cx="243.696" cy="335.652" r="5" fill="#2563eb"/>
+<circle cx="243.696" cy="281.304" r="5" fill="#d97706"/>
+<text x="243.696" y="412" font-size="15" fill="#64748b" text-anchor="middle">1</text>
+<polyline points="402.391,390 402.391,172.609" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<circle cx="402.391" cy="281.304" r="5" fill="#2563eb"/>
+<circle cx="402.391" cy="172.609" r="5" fill="#d97706"/>
+<text x="402.391" y="412" font-size="15" fill="#64748b" text-anchor="middle">2</text>
+<text x="354.783" y="313.913" font-size="15" fill="#2563eb" text-anchor="middle">x = t</text>
+<text x="346.848" y="178.043" font-size="15" fill="#d97706" text-anchor="middle">y = 2t</text>
+<text x="810" y="67" font-size="18" fill="#1e293b" text-anchor="middle">右：只看 y 与 x 的关系</text>
+<text x="810" y="92" font-size="14" fill="#64748b" text-anchor="middle">y = 2x；箭头由原方程决定</text>
+<polyline points="640,390 960,390" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-linejoin="round"/>
+<polyline points="640,390 640,140" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-linejoin="round"/>
+<text x="972" y="395" font-size="16" fill="#1e293b" text-anchor="middle">x</text>
+<text x="640" y="128" font-size="16" fill="#1e293b" text-anchor="middle">y</text>
+<polyline points="640,390 932.174,161.739" fill="none" stroke="#159568" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="723.478,324.783 751.304,303.043" fill="none" stroke="#159568" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="751.304,303.043 747.77,310.22 743.485,304.736" fill="#159568"/>
+<polyline points="855.652,221.522 883.478,199.783" fill="none" stroke="#159568" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="883.478,199.783 879.944,206.96 875.659,201.475" fill="#159568"/>
+<circle cx="640" cy="390" r="5" fill="#159568"/>
+<text x="675" y="375" font-size="15" fill="#159568" text-anchor="middle">(0, 0)</text>
+<circle cx="779.13" cy="281.304" r="5" fill="#159568"/>
+<text x="814.13" y="266.304" font-size="15" fill="#159568" text-anchor="middle">(1, 2)：t = 1</text>
+<circle cx="918.261" cy="172.609" r="5" fill="#159568"/>
+<text x="898.261" y="157.609" font-size="15" fill="#159568" text-anchor="middle">(2, 4)：t = 2</text>
+<text x="540" y="443" font-size="17" fill="#1e293b" text-anchor="middle">例如 t = 1：左图读出 x = 1、y = 2，右图就得到点 (1, 2)。</text>
+<text x="540" y="471" font-size="16" fill="#1e293b" text-anchor="middle">时间被省去了，留下直线的形状；往哪边走、走多快，仍要看原方程。</text></g></svg>
