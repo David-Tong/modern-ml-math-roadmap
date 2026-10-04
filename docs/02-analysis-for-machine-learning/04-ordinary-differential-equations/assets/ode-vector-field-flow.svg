@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc"><title id="title">无阻尼弹簧的向量场与一条解轨迹</title><desc id="desc">横轴为位置 x，纵轴为速度 v。蓝色箭头表示状态变化率 (v,-x)，橙色圆是从 (1,0) 出发的顺时针解轨迹，原点是平衡状态。</desc><defs><marker id="blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#3676a5"/></marker><marker id="orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d57228"/></marker></defs><rect width="960" height="560" fill="#fbfaf7"/><g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#243443"><text x="35" y="38" font-size="23" font-weight="bold">向量场：每个状态都有一支“下一步怎么走”的箭头</text><text x="35" y="67" font-size="17">无阻尼弹簧  x′ = v，v′ = −x</text>
+<path d='M 90 105 V 505 M 80 495 H 480' stroke='#e2e5e7' fill='none'/>
+<text x='90' y='328' text-anchor='middle' font-size='13'>-2</text><text x='267' y='500' text-anchor='end' font-size='13'>-2</text>
+<path d='M 185 105 V 505 M 80 400 H 480' stroke='#e2e5e7' fill='none'/>
+<text x='185' y='328' text-anchor='middle' font-size='13'>-1</text><text x='267' y='405' text-anchor='end' font-size='13'>-1</text>
+<path d='M 280 105 V 505 M 80 305 H 480' stroke='#e2e5e7' fill='none'/>
+<path d='M 375 105 V 505 M 80 210 H 480' stroke='#e2e5e7' fill='none'/>
+<text x='375' y='328' text-anchor='middle' font-size='13'>1</text><text x='267' y='215' text-anchor='end' font-size='13'>1</text>
+<path d='M 470 105 V 505 M 80 115 H 480' stroke='#e2e5e7' fill='none'/>
+<text x='470' y='328' text-anchor='middle' font-size='13'>2</text><text x='267' y='120' text-anchor='end' font-size='13'>2</text>
+<path d="M 75 305 H 490 M 280 510 V 95" stroke="#687784" stroke-width="1.5"/><text x="468" y="347" font-size="16">位置 x</text><text x="294" y="108" font-size="16">速度 v</text>
+<path d='M 90 495 L 64 469' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 447.5 L 70.5 421.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 400 L 77 374' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 352.5 L 83.5 326.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 305 L 90 279' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 257.5 L 96.5 231.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 210 L 103 184' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 162.5 L 109.5 136.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 90 115 L 116 89' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 495 L 111.5 475.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 447.5 L 118 428' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 400 L 124.5 380.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 352.5 L 131 333' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 305 L 137.5 285.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 257.5 L 144 238' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 210 L 150.5 190.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 162.5 L 157 143' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 137.5 115 L 163.5 95.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 495 L 159 482' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 447.5 L 165.5 434.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 400 L 172 387' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 352.5 L 178.5 339.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 305 L 185 292' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 257.5 L 191.5 244.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 210 L 198 197' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 162.5 L 204.5 149.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 185 115 L 211 102' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 495 L 206.5 488.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 447.5 L 213 441' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 400 L 219.5 393.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 352.5 L 226 346' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 305 L 232.5 298.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 257.5 L 239 251' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 210 L 245.5 203.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 162.5 L 252 156' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 232.5 115 L 258.5 108.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 495 L 254 495' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 447.5 L 260.5 447.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 400 L 267 400' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 352.5 L 273.5 352.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 257.5 L 286.5 257.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 210 L 293 210' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 162.5 L 299.5 162.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 280 115 L 306 115' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 495 L 301.5 501.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 447.5 L 308 454' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 400 L 314.5 406.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 352.5 L 321 359' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 305 L 327.5 311.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 257.5 L 334 264' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 210 L 340.5 216.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 162.5 L 347 169' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 327.5 115 L 353.5 121.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 495 L 349 508' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 447.5 L 355.5 460.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 400 L 362 413' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 352.5 L 368.5 365.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 305 L 375 318' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 257.5 L 381.5 270.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 210 L 388 223' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 162.5 L 394.5 175.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 375 115 L 401 128' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 495 L 396.5 514.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 447.5 L 403 467' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 400 L 409.5 419.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 352.5 L 416 372' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 305 L 422.5 324.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 257.5 L 429 277' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 210 L 435.5 229.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 162.5 L 442 182' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 422.5 115 L 448.5 134.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 495 L 444 521' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 447.5 L 450.5 473.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 400 L 457 426' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 352.5 L 463.5 378.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 305 L 470 331' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 257.5 L 476.5 283.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 210 L 483 236' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 162.5 L 489.5 188.5' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<path d='M 470 115 L 496 141' stroke='#3676a5' stroke-width='1.7' opacity='0.85' marker-end='url(#blue)'/>
+<circle cx="280" cy="305" r="95" fill="none" stroke="#d57228" stroke-width="2.7"/><path d="M 375 305 A 95 95 0 0 1 369.27 337.49" fill="none" stroke="#d57228" stroke-width="2.7" marker-end="url(#orange)"/><circle cx="375" cy="305" r="4.5" fill="#d57228"/><text x="388" y="292" font-size="15" fill="#b95a1b">起点 (1, 0)</text><circle cx="280" cy="305" r="4" fill="#243443"/><text x="290" y="293" font-size="13">0</text><text x="555" y="139" font-size="19" font-weight="bold" fill="#3676a5">蓝箭头：向量场</text><text x="555" y="173" font-size="17">在 (x, v) 处，箭头为 (v, −x)。</text><text x="555" y="204" font-size="17">向右或左：位置怎样变；</text><text x="555" y="234" font-size="17">向上或下：速度怎样变。</text><text x="555" y="291" font-size="19" font-weight="bold" fill="#b95a1b">橙色圆：一条解轨迹</text><text x="555" y="325" font-size="17">从 (1, 0) 出发，沿箭头顺时针走。</text><text x="555" y="355" font-size="17">每一点的箭头都与轨迹相切。</text><text x="555" y="412" font-size="17">原点：位置、速度都不再变化。</text><text x="555" y="445" font-size="17">箭头按同一比例缩放，</text><text x="555" y="475" font-size="17">越长表示状态变化越快。</text><text x="35" y="540" font-size="15" fill="#586877">这张图画的是“位置—速度”状态平面，不是弹簧在真实空间里绕圆运动。</text></g></svg>
